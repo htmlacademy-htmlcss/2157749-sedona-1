@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Oreshkin](https://up.htmlacademy.ru/htmlcss-individual/1/user/2157749).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Зиновьев`.
 
 ---
 
