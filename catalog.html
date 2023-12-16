@@ -85,13 +85,102 @@
             <legend class="hotels-filter-title">Стоимость, &#8381;</legend>
             <input type="number" placeholder="от">
             <input type="number" placeholder="до"><br>
-            <input type="range" min="0" max="9000" >
+            <input type="range" min="0" max="9000">
           </fieldset>
           <button class="main-subscription-button" type="submit">Применить</button>
           <button class="main-subscription-button subscription-button-reset" type="reset">Сбросить</button>
         </form>
       </section>
+      <section class="page-hotels-sorting">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <p class="hotel-sorting-result">Найдено гостиниц: 38</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+        </select>
+        <ul>
+          <li><button>Плитки</button></li>
+          <li><button>По одной</button></li>
+          <li><button>Список</button></li>
+        </ul>
+      </section>
+      <section class="page-hotels-cards">
+        <ul>
+          <li>
+            <ul class="hotel-card">
+              <li><img src="empty" alt="Вид из пещеры в скале на звездное небо"></li>
+              <li>
+                <h3 class="hotel-card-title">Amara Resort &amp; Spa</h3>
+              </li>
+              <li><span class="hotel-card-text">Гостиница</span></li>
+              <li><span class="hotel-card-text">от 4000 &#8381;</span></li>
+              <li><a class="main-subscription-button card-button-brown" href="">Подробнее</a></li>
+              <li><a class="main-subscription-button card-button-blue" href="">Избранное</a></li>
+              <li><span class="hotel-card-text card-text-uppercase">Рейтинг: 8,5</span></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="hotel-card">
+              <li><img src="empty" alt="Горы на фоне радуги"></li>
+              <li>
+                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+              </li>
+              <li><span class="hotel-card-text">Гостиница</span></li>
+              <li><span class="hotel-card-text">от 5000 &#8381;</span></li>
+              <li><a class="main-subscription-button card-button-brown" href="">Подробнее</a></li>
+              <li><a class="main-subscription-button card-button-blue" href="">Избранное</a></li>
+              <li><span class="hotel-card-text card-text-uppercase">Рейтинг: 9,2</span></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="hotel-card">
+              <li><img src="empty" alt="Красная гора на фоне голубого неба"></li>
+              <li>
+                <h3 class="hotel-card-title">Desert Quail Inn</h3>
+              </li>
+              <li><span class="hotel-card-text">Гостиница</span></li>
+              <li><span class="hotel-card-text">от 2500 &#8381;</span></li>
+              <li><a class="main-subscription-button card-button-brown" href="">Подробнее</a></li>
+              <li><a class="main-subscription-button card-button-blue" href="">Избранное</a></li>
+              <li><span class="hotel-card-text card-text-uppercase">Рейтинг: 6,9</span></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="hotel-card">
+              <li><img src="empty" alt="Красная гора на фоне предрассветного неба"></li>
+              <li>
+                <h3 class="hotel-card-title">GreenTree Inn</h3>
+              </li>
+              <li><span class="hotel-card-text">Гостиница</span></li>
+              <li><span class="hotel-card-text">от 1500 &#8381;</span></li>
+              <li><a class="main-subscription-button card-button-brown" href="">Подробнее</a></li>
+              <li><a class="main-subscription-button card-button-blue" href="">Избранное</a></li>
+              <li><span class="hotel-card-text card-text-uppercase">Рейтинг: 5,0</span></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
+    
       <section class="page-hotels-subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="main-invite-uppercase">Подпишитесь на рассылку</p>
