@@ -23,10 +23,68 @@
       </nav>
     </header>
     <main class="page-hotels">
-      <section class="page-hotels-filter">
-
-      </section>
+      <header class="page-hotels-header">
         <h1 class="page-hotels-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+        </ul>
+      </header>
+      <section class="page-hotels-filter">
+        <h2 class="visually-hidden">Список услуг с фильтрами</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Инфраструктура</legend>
+            <ul>
+              <li><label class="control">
+                  <input class="control-input" type="checkbox" name="pool" checked>
+                  Бacceйн
+                </label>
+              </li>
+              <li><label class="control">
+                  <input class="control-input" type="checkbox" name="parking">
+                  Парковка
+                </label>
+              </li>
+              <li><label class="control">
+                  <input class="control-input" type="checkbox" name="wi-fi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Тип Жилья</legend>
+            <ul class="hotels-filter-list">
+              <li class="hotels-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-type" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-type" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="main-subscription-button" type="submit">Применить</button>
+        </form>
+      </section>
+
       <section class="page-hotels-subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="main-invite-uppercase">Подпишитесь на рассылку</p>
@@ -41,7 +99,8 @@
       <ul class="footer-social-list">
         <li class="footer-social-item"><a href="https://vk.com/htmlacademy"><img src="empty" alt="В контакте"></a></li>
         <li class="footer-social-item"><a href="https://t.me/htmlacademy"><img src="empty" alt="Телеграмм"></a></li>
-        <li class="footer-social-item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="empty" alt="Ютуб"></a>
+        <li class="footer-social-item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="empty"
+              alt="Ютуб"></a>
         </li>
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
