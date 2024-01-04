@@ -39,9 +39,10 @@
     <!-- ./header -->
     <!-- main -->
     <main class="page-hotels">
-      <section>
-      <header class="hotels-header">
+      <div class="hotels-wrapper">
+
         <h1 class="hotels-title">Гостиницы Седоны</h1>
+
         <ol class="breadcrumbs">
           <li>
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -50,7 +51,7 @@
             <a class="breadcrumbs-link" href="" aria-current="page">Каталог</a>
           </li>
         </ol>
-      </header>
+
       <section class="hotels-filter">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
 
@@ -112,6 +113,7 @@
           <button class="button button-reset" type="reset">Сбросить</button>
         </form>
       </section>
+    </div>
       <section class="hotels-sorting">
         <h2 class="sorting-result">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
@@ -124,7 +126,7 @@
           <li><button>Список</button></li>
         </ul>
       </section>
-    </section>
+
       <section class="hotels-cards">
         <ul>
           <li class="hotel-card">
@@ -208,7 +210,7 @@
         <p class="services-text subscription-white">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш e-mail</label>
-          <input class="subscription-input" type="email" id="email" placeholder="Ваш e-mail">
+          <input class="subscription-input" type="email" id="email" placeholder="Ваш e-mail" required>
           <button class="button subscription-button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
