@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+  background: #fff;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list-type {
+  list-style: none;
+}
+
+.navigation-list a {
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+}
+
+.search-link {
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+}
+
+.favorite-link {
+  background-image: url(../images/icons/heart.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
