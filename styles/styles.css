@@ -19,7 +19,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333;
-  background: #fff;
+  /*background: #fff;*/
 }
 
 .visually-hidden {
@@ -70,4 +70,35 @@ body {
   background-image: url(../images/icons/heart.svg);
   background-repeat: no-repeat;
   background-size: 20px 20px;
+}
+
+.main-bunner {
+  background-image: url(../images/pictures/background-hero.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+.bunner-text {
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.main-subscription {
+  background-image: url(../images/pictures/subscribe\ .jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.subscription-wrapper{
+  padding-top: 98px;
+  padding-bottom: 104px;
+}
+
+.hotels-choice{
+  background-image: url(../images/pictures/filter.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }

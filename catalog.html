@@ -50,89 +50,91 @@
     <!-- ./header -->
     <!-- main -->
     <main class="page-hotels">
-      <div class="hotels-wrapper">
+      <section class="hotels-choice">
+        <div class="hotels-wrapper">
 
-        <h1 class="hotels-title">Гостиницы Седоны</h1>
+          <h1 class="hotels-title">Гостиницы Седоны</h1>
 
-        <ol class="list-type breadcrumbs">
-          <li>
-            <a class="link breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">Главная</span></a>
-          </li>
-          <li>
-            <a class="link breadcrumbs-link" href="#" aria-current="page">Каталог</a>
-          </li>
-        </ol>
+          <ol class="list-type breadcrumbs">
+            <li>
+              <a class="link breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">Главная</span></a>
+            </li>
+            <li>
+              <a class="link breadcrumbs-link" href="#" aria-current="page">Каталог</a>
+            </li>
+          </ol>
 
-        <section class="hotels-filter">
-          <h2 class="visually-hidden">Поиск гостиниц</h2>
+          <section class="hotels-filter">
+            <h2 class="visually-hidden">Поиск гостиниц</h2>
 
-          <form action="https://echo.htmlacademy.ru/" method="post">
+            <form action="https://echo.htmlacademy.ru/" method="post">
 
-            <fieldset class="filter-group">
-              <legend class="filter-title">Инфраструктура</legend>
-              <ul class="list-type">
-                <li>
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>
-                    Бacceйн
-                  </label>
-                </li>
-                <li>
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="parking">
-                    Парковка
-                  </label>
-                </li>
-                <li>
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                    Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Инфраструктура</legend>
+                <ul class="list-type">
+                  <li>
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="pool" checked>
+                      Бacceйн
+                    </label>
+                  </li>
+                  <li>
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking">
+                      Парковка
+                    </label>
+                  </li>
+                  <li>
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-group">
-              <legend class="filter-title">Тип Жилья</legend>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Тип Жилья</legend>
 
-              <ul class="list-type filter-list">
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
-                    Гостиница
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" value="motel">
-                    Мотель
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" value="apartments">
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
+                <ul class="list-type filter-list">
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="housing-type" value="motel">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="housing-type" value="apartments">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
 
-            </fieldset>
+              </fieldset>
 
-            <fieldset class="filter-group">
-              <legend class="filter-title">Стоимость, &#8381;</legend>
-              <input type="number" placeholder="от">
-              <input type="number" placeholder="до">
-              <input type="range" min="0" max="9000">
-            </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Стоимость, &#8381;</legend>
+                <input type="number" placeholder="от">
+                <input type="number" placeholder="до">
+                <input type="range" min="0" max="9000">
+              </fieldset>
 
-            <button class="button" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+              <button class="button" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
 
-          </form>
-        </section>
+            </form>
+          </section>
 
-      </div>
+        </div>
+      </section>
       <section class="hotels-sorting">
         <h2 class="sorting-result">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
