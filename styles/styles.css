@@ -119,8 +119,6 @@ body {
   text-transform: uppercase;
 }
 
-
-
 .image-container {
   display: inline-block;
   width: 75px;
@@ -135,9 +133,13 @@ body {
   background-image: url(../images/icons/advantage-food.svg);
 }
 
-.image-gift{
+.image-gift {
   background-image: url(../images/icons/advantage-gift.svg);
   height: 75px;
+}
+
+.main-search {
+  text-align: center;
 }
 
 .main-subscription {
