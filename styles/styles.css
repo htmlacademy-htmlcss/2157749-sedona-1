@@ -121,6 +121,25 @@ body {
 
 
 
+.image-container {
+  display: inline-block;
+  width: 75px;
+  height: 72px;
+}
+
+.image-house {
+  background-image: url(../images/icons/advantage-housing.svg);
+}
+
+.image-burger {
+  background-image: url(../images/icons/advantage-food.svg);
+}
+
+.image-gift{
+  background-image: url(../images/icons/advantage-gift.svg);
+  height: 75px;
+}
+
 .main-subscription {
   background-image: url(../images/pictures/subscribe\ .jpg);
   background-size: 100% auto;
