@@ -154,6 +154,32 @@ body {
   padding-bottom: 104px;
 }
 
+.social-item-vk{
+  background-image: url(../images/icons/vk.svg);
+  width: 24px;
+  height: 14px;
+}
+
+.social-item-telegram {
+  background-image: url(../images/icons/telegram.svg);
+  width: 18px;
+  height: 16px;
+}
+
+.social-item-youtube {
+  background-image: url(../images/icons/youtube.svg);
+  width: 22px;
+  height: 17px;
+}
+
+.footer-phone {
+  font-size: 40px;
+font-style: normal;
+line-height: 40px;
+text-transform: uppercase;
+color:#000000;
+}
+
 .hotels-choice {
   background-image: url(../images/pictures/filter.jpg);
   background-size: 100% auto;
