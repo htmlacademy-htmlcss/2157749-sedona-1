@@ -14,6 +14,8 @@
   font-display: swap;
 }
 
+/*index.html*/
+
 body {
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
@@ -51,6 +53,8 @@ body {
   list-style: none;
 }
 
+/*header*/
+
 .navigation-list a {
   font-size: 20px;
   font-weight: 700;
@@ -70,13 +74,14 @@ body {
   background-size: 20px 20px;
 }
 
+/*main*/
+/*bunner*/
 .main-bunner {
   background-image: url(../images/pictures/background-hero.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
 }
-
 
 .bunner-slogan {
   padding-top: 51px;
@@ -97,7 +102,7 @@ body {
   line-height: 26px;
   text-align: center;
 }
-
+/*advantages*/
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
@@ -119,6 +124,7 @@ body {
   text-transform: uppercase;
 }
 
+/*services*/
 .image-container {
   display: inline-block;
   width: 75px;
@@ -138,10 +144,11 @@ body {
   height: 75px;
 }
 
+/*search*/
 .main-search {
   text-align: center;
 }
-
+/*subscription*/
 .main-subscription {
   background-image: url(../images/pictures/subscribe\ .jpg);
   background-size: 100% auto;
@@ -154,7 +161,8 @@ body {
   padding-bottom: 104px;
 }
 
-.social-item-vk{
+/*footer*/
+.social-item-vk {
   background-image: url(../images/icons/vk.svg);
   width: 24px;
   height: 14px;
@@ -174,11 +182,13 @@ body {
 
 .footer-phone {
   font-size: 40px;
-font-style: normal;
-line-height: 40px;
-text-transform: uppercase;
-color:#000000;
+  font-style: normal;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
 }
+
+/*catalog*/
 
 .hotels-choice {
   background-image: url(../images/pictures/filter.jpg);
@@ -189,4 +199,16 @@ color:#000000;
 
 .breadcrumbs-link {
   color: #fff;
+}
+
+.breadcrumbs-home{
+  background-image: url(../images/icons/home.svg);
+  width: 12px;
+  height: 12px;
+}
+
+.breadcrumbs-arrow {
+  background-image: url(../images/icons/breadcrumbs-arrow.svg);
+  width: 6px;
+  height: 10px;
 }
