@@ -136,11 +136,11 @@ body {
   color: #000;
 }
 
-.subtitle-white{
+.subtitle-white {
   color: #ffffff;
 }
 
-.advantages-text{
+.advantages-text {
   font-size: 18px;
 }
 
@@ -299,41 +299,83 @@ input[type=range] {
   color: #000000;
 }
 
-.select-control{
+.select-control {
   width: 292px;
   height: 49px;
   border-radius: 0;
   color: #333;
 }
 
-.button-view{
+.button-view {
   background-color: #fff;
   width: 48px;
   height: 48px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
-.button-current{
+
+.button-current {
   background-color: #fff;
   width: 48px;
   height: 48px;
   border: 2px solid #000;
   border-radius: 4px;
 }
-.button-tiles{
+
+.button-tiles {
   background-image: url(../images/icons/view-tiles.svg);
   width: 16px;
   height: 14px;
 }
 
-.button-single{
+.button-single {
   background-image: url(../images/icons/view-single.svg);
   width: 16px;
   height: 14px;
 }
 
-.button-list{
+.button-list {
   background-image: url(../images/icons/view-list.svg);
   width: 16px;
   height: 14px;
+}
+
+/*hotels-cards*/
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.card-text-uppercase {
+  text-transform: uppercase;
+}
+
+.button-green{
+  background-color: #7db54f;
+}
+
+/*pagination*/
+
+.pagination-item{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.pagination-link{
+  color:#000
+}
+
+.pagination-white{
+  color: #fff;
 }
