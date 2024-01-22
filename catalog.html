@@ -32,13 +32,15 @@
 
         <ul class="list-type user-menu">
           <li>
-            <a class="search-link" href="#">
+            <a class="link" href="#">
               <span class="visually-hidden">Поиск</span>
+              <div class="search-link"></div>
             </a>
           </li>
           <li>
-            <a class="favorite-link" href="#">
+            <a class="link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <div class="favorite-link"></div>
             </a>
           </li>
         </ul>
@@ -63,10 +65,13 @@
               </a>
             </li>
             <li>
-              <div class="breadcrumbs-arrow"></div>
+              <a class="link breadcrumbs-link" href="#">
+                <span class="visually-hidden">Стрелка вправо</span>
+                <div class="breadcrumbs-arrow"></div>
+              </a>
             </li>
             <li>
-              <a class="link breadcrumbs-link" href="#" aria-current="page">Каталог</a>
+              <a class="link breadcrumbs-link" href="#" aria-current="page">Гостиницы</a>
             </li>
           </ol>
 
@@ -79,21 +84,24 @@
                 <legend class="filter-title">Инфраструктура</legend>
                 <ul class="list-type">
                   <li>
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      Бacceйн
+                    <label class="control-checkbox">
+                      <input class="control" type="checkbox" name="pool" checked>
+                      <span class="checkbox-image"></span>
+                      <span class="checkbox-text">Бacceйн</span>
                     </label>
                   </li>
                   <li>
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="parking">
-                      Парковка
+                    <label class="control-checkbox">
+                      <input class="control" type="checkbox" name="parking" checked>
+                      <span class="checkbox-image"></span>
+                      <span class="checkbox-text">Парковка</span>
                     </label>
                   </li>
                   <li>
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                    <label class="control-checkbox">
+                      <input class="control" type="checkbox" name="wi-fi">
+                      <span class="checkbox-image"></span>
+                      <span class="checkbox-text">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -104,21 +112,21 @@
 
                 <ul class="list-type filter-list">
                   <li class="filter-item">
-                    <label class="control">
+                    <label class="control-radio">
                       <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
-                      Гостиница
+                      <span>Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control">
+                    <label class="control-radio">
                       <input class="control-input" type="radio" name="housing-type" value="motel">
-                      Мотель
+                      <span>Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control">
+                    <label class="control-radio">
                       <input class="control-input" type="radio" name="housing-type" value="apartments">
-                      Апартаменты
+                      <span>Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -132,7 +140,7 @@
                 <input type="range" min="0" max="9000">
               </fieldset>
 
-              <button class="button" type="submit">Применить</button>
+              <button class="button button-blue" type="submit">Применить</button>
               <button class="button button-reset" type="reset">Сбросить</button>
 
             </form>

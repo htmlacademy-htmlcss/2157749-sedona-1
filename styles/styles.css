@@ -45,6 +45,10 @@ body {
   color: #fff;
 }
 
+.button-blue{
+  background-color: #82B3D3;
+}
+
 .link {
   text-decoration: none;
 }
@@ -62,16 +66,16 @@ body {
   color: #000;
 }
 
-.search-link {
+.search-link  {
   background-image: url(../images/icons/search.svg);
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .favorite-link {
   background-image: url(../images/icons/heart.svg);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /*main*/
@@ -102,6 +106,7 @@ body {
   line-height: 26px;
   text-align: center;
 }
+
 /*advantages*/
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
@@ -148,6 +153,7 @@ body {
 .main-search {
   text-align: center;
 }
+
 /*subscription*/
 .main-subscription {
   background-image: url(../images/pictures/subscribe\ .jpg);
@@ -189,7 +195,10 @@ body {
 }
 
 /*catalog*/
-
+/*hotels choise*/
+.page-hotels{
+  background-color: #756157; /*проверял работает ли прозрачность фона на кнопке Сбросить*/
+}
 .hotels-choice {
   background-image: url(../images/pictures/filter.jpg);
   background-size: 100% auto;
@@ -197,11 +206,20 @@ body {
   color: #fff;
 }
 
+.hotels-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+
 .breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
   color: #fff;
 }
 
-.breadcrumbs-home{
+.breadcrumbs-home {
   background-image: url(../images/icons/home.svg);
   width: 12px;
   height: 12px;
@@ -211,4 +229,19 @@ body {
   background-image: url(../images/icons/breadcrumbs-arrow.svg);
   width: 6px;
   height: 10px;
+}
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.checkbox-text {
+  line-height: 23px;
+}
+
+.button-reset {
+ background-color:  rgba(0, 0, 0, 0);
 }
