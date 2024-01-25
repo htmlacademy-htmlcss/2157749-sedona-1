@@ -157,7 +157,7 @@ body {
   margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 104px;
-  background-color: #fff;
+  background-color: #2b3a3f;
   color: #fff;
 }
 
@@ -192,6 +192,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   color: #fff;
+  background-color: #2b3a3f;
 }
 
 .hotels-title {
