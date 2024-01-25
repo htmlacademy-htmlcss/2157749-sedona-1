@@ -22,6 +22,7 @@ body {
   line-height: 21px;
   color: #333;
   margin: 0;
+  padding: 0;
   min-width: 1200px;
 }
 
@@ -70,7 +71,7 @@ body {
   display: block;
 }
 
-.navigation-list a {
+.navigation-link {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -90,7 +91,7 @@ body {
   padding-top: 51px;
 }
 
-.main-bunner img {
+.bunner-img {
   display: block;
   margin: 0 auto;
 }
@@ -159,18 +160,17 @@ body {
   padding-bottom: 104px;
   background-color: #2b3a3f;
   color: #fff;
-}
-
-.main-subscription p {
   text-align: center;
 }
 
-.main-subscription input {
+input[type=email] {
   font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  color: #000;
+  border: none;
 }
 
 /*footer*/
@@ -238,6 +238,7 @@ input[type=number] {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  border: none;
 }
 
 input[type=range] {
@@ -264,10 +265,16 @@ input[type=range] {
 }
 
 .select-control {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
   width: 292px;
   height: 49px;
   border-radius: 0;
   color: #333;
+  border: 2px solid #E5E5E5;
 }
 
 .button-view {
@@ -336,7 +343,7 @@ input[type=range] {
   padding-bottom: 104px;
 }
 
-.page-subscription input{
+.page-subscription input {
   font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
