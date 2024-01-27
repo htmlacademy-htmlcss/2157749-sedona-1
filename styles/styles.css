@@ -164,7 +164,7 @@ body {
 }
 
 .subscription-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -172,7 +172,7 @@ body {
   color: #000;
   border: none;
   border-radius: 4px 0 0 4px;
-  background:#f2f2f2;
+  background: #f2f2f2;
 }
 
 /*footer*/
@@ -243,10 +243,7 @@ input[type=range] {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.button-filter {
-  width: 191px;
-  height: 36px;
-}
+
 
 /*hotels-sorting*/
 
@@ -259,7 +256,7 @@ input[type=range] {
 }
 
 .select-control {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -310,8 +307,13 @@ input[type=range] {
 
 .pagination-item {
   display: inline-block;
+}
+
+.pagination-link {
+  display: block;
   width: 60px;
   height: 60px;
+  color: #000;
   border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
@@ -319,11 +321,7 @@ input[type=range] {
   text-transform: uppercase;
 }
 
-.pagination-link {
-  color: #000
-}
-
-.pagination-white {
+.link-white {
   color: #fff;
 }
 
@@ -336,5 +334,3 @@ input[type=range] {
   padding-top: 96px;
   padding-bottom: 104px;
 }
-
-
