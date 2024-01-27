@@ -152,7 +152,7 @@ body {
 
 /*subscription*/
 .main-subscription {
-  background-image: url(../images/pictures/subscribe\ .jpg);
+  background-image: url(../images/pictures/subscribe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -164,7 +164,7 @@ body {
 }
 
 .subscription-input {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -256,7 +256,7 @@ input[type=range] {
 }
 
 .select-control {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -304,10 +304,6 @@ input[type=range] {
 }
 
 /*pagination*/
-
-.pagination-item {
-  display: inline-block;
-}
 
 .pagination-link {
   display: block;
