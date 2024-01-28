@@ -24,9 +24,11 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
-.visually-hidden {
+/*.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -36,7 +38,7 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   overflow: hidden;
-}
+}*/
 
 .button {
   display: block;
@@ -67,6 +69,27 @@ body {
 }
 
 /*header*/
+.navigation{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 339px;
+  margin-left: 30px;
+}
+
+.user-menu{
+  max-width: 132px;
+  margin-left: auto;
+}
+
+.button-want {
+  display: block;
+  margin-left: 12px;
+}
+
 .navigation-logo {
   display: block;
 }
@@ -79,6 +102,12 @@ body {
 }
 
 /*main*/
+
+.main-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 /*bunner*/
 .main-bunner {
   background-image: url(../images/pictures/background-hero.jpg);
@@ -100,6 +129,17 @@ body {
   margin-top: 0;
 }
 
+.bunner-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 69px 0;
+}
+
 .bunner-text {
   font-size: 30px;
   font-weight: 700;
@@ -107,6 +147,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  width: 630px;
 }
 
 .bunner-heading {
