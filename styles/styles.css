@@ -69,7 +69,7 @@ body {
 }
 
 /*header*/
-.navigation{
+.navigation {
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -80,7 +80,7 @@ body {
   margin-left: 30px;
 }
 
-.user-menu{
+.user-menu {
   max-width: 132px;
   margin-left: auto;
 }
@@ -132,7 +132,6 @@ body {
 .bunner-wrapper {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -165,7 +164,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-.advantages-pic{
+
+.advantages-pic {
   display: flex;
 }
 
@@ -178,10 +178,11 @@ body {
   display: flex;
   margin: 0;
 }
+
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
-  }
+}
 
 .advantages-road {
   background-color: rgba(131, 179, 211, 0.20);
@@ -210,11 +211,9 @@ body {
 .services-title {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   padding: 64px 0;
 }
 
@@ -222,11 +221,9 @@ body {
 .main-search {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   padding: 96px 0;
 }
 
@@ -245,6 +242,17 @@ body {
   background-color: #2b3a3f;
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscription-input {
@@ -257,9 +265,29 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   background: #f2f2f2;
+  padding: 12px 20px;
+  width: 412px;
+}
+
+.subscription-button {
+  padding: 14px 50px;
+  border-radius: 0 4px 4px 0;
 }
 
 /*footer*/
+
+.footer-wrapper {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social-wrapper {
+  display: flex;
+
+}
 
 .footer-phone {
   font-size: 40px;
@@ -267,6 +295,10 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.academy-logo {
+  display: block;
 }
 
 /*catalog*/
