@@ -71,7 +71,7 @@ body {
 /*header*/
 .navigation {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
 }
 
@@ -304,6 +304,11 @@ body {
 /*catalog*/
 /*hotels choise*/
 
+.page-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .hotels-wrapper {
   background-image: url(../images/pictures/filter.jpg);
   background-size: cover;
@@ -313,10 +318,17 @@ body {
   background-color: #2b3a3f;
 }
 
+.breadcrumbs-list {
+  display: flex;
+  margin-bottom: 40px;
+}
+
 .hotels-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
+  padding-top: 35px;
+  margin: 0;
 }
 
 
@@ -326,21 +338,45 @@ body {
   color: #fff;
 }
 
+.filter-wrapper {
+  display: flex;
+  padding-bottom: 70px;
+  gap: 70px;
+}
 
 .filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  margin-bottom: 32px;
 }
 
-.checkbox-text {
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+}
+
+checkbox-text {
   line-height: 23px;
 }
+
+
 
 .input-filter {
   width: 143px;
   height: 48px;
+  margin-bottom: 36px;
+  display: block;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-right: 70px;
+  width: 288px;
 }
 
 .input-left {
@@ -355,8 +391,19 @@ input[type=range] {
   width: 287px;
 }
 
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
 .button-reset {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 57px;
+}
+
+button[type="submit"] {
+  padding: 8px 50px;
 }
 
 
