@@ -28,7 +28,7 @@ body {
   flex-direction: column;
 }
 
-/*.visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -38,7 +38,7 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   overflow: hidden;
-}*/
+}
 
 .button {
   display: block;
@@ -244,9 +244,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 96px 0;
 }
 
 .subscription-form {
@@ -341,7 +339,12 @@ body {
 .filter-wrapper {
   display: flex;
   padding-bottom: 70px;
+}
+
+.filter-list-wrapper {
+  display: flex;
   gap: 70px;
+  margin-right: auto;
 }
 
 .filter-title {
@@ -352,6 +355,10 @@ body {
   margin-bottom: 32px;
 }
 
+fieldset{
+  border: 0 none;
+}
+
 .filter-list {
   display: flex;
   flex-direction: column;
@@ -360,10 +367,15 @@ body {
 
 }
 
-checkbox-text {
+.checkbox-text {
   line-height: 23px;
 }
 
+
+.cost-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 
 .input-filter {
@@ -389,17 +401,21 @@ checkbox-text {
 
 input[type=range] {
   width: 287px;
+  margin-bottom: 0;
 }
 
 .button-wrapper {
   display: flex;
   flex-direction: column;
   gap: 36px;
+  margin-top: 66px;
+
 }
 
 .button-reset {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 8px 57px;
+
 }
 
 button[type="submit"] {
@@ -410,12 +426,18 @@ button[type="submit"] {
 
 /*hotels-sorting*/
 
+.hotels-sorting {
+  display: flex;
+  align-items: center;
+}
+
 .sorting-result {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-right: auto;
 }
 
 .select-control {
@@ -429,6 +451,14 @@ button[type="submit"] {
   border-radius: 0;
   color: #333;
   border: 2px solid #E5E5E5;
+margin-right: 70px;
+}
+
+.veiw-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+
 }
 
 .button-view {
@@ -489,7 +519,10 @@ button[type="submit"] {
 .page-subscription {
   background-color: #fff;
   background-size: cover;
-  text-align: center;
+  margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
