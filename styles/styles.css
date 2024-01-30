@@ -355,7 +355,7 @@ body {
   margin-bottom: 32px;
 }
 
-fieldset{
+fieldset {
   border: 0 none;
 }
 
@@ -364,7 +364,6 @@ fieldset{
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-
 }
 
 .checkbox-text {
@@ -429,6 +428,8 @@ button[type="submit"] {
 .hotels-sorting {
   display: flex;
   align-items: center;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .sorting-result {
@@ -451,7 +452,7 @@ button[type="submit"] {
   border-radius: 0;
   color: #333;
   border: 2px solid #E5E5E5;
-margin-right: 70px;
+  margin-right: 70px;
 }
 
 .veiw-wrapper {
@@ -478,6 +479,21 @@ margin-right: 70px;
 }
 
 /*hotels-cards*/
+
+.cards-container {
+  display: flex;
+  width: 1060px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.card-wrapper{
+  display: flex;
+  flex-direction: column;
+  background-color: #E6E6E6;
+  padding: 20px;
+}
 
 .card-title {
   font-size: 24px;
