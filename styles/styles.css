@@ -83,6 +83,9 @@ body {
 .navigation-list {
   width: 339px;
   margin-left: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .user-menu {
