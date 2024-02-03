@@ -348,6 +348,7 @@ body {
 .filter-wrapper {
   display: flex;
   padding-bottom: 70px;
+  align-items: flex-end;
 }
 
 .filter-list-wrapper {
@@ -366,6 +367,8 @@ body {
 
 fieldset {
   border: 0 none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-list {
@@ -373,10 +376,16 @@ fieldset {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  width: 150px;
+}
+
+.control {
+  display: inline-block;
 }
 
 .checkbox-text {
   line-height: 23px;
+  display: inline-block;
 }
 
 
@@ -385,18 +394,21 @@ fieldset {
   flex-direction: column;
 }
 
+.cost-filter-wrapper {
+  margin-right: 70px;
+}
 
 .input-filter {
   width: 143px;
   height: 48px;
-  margin-bottom: 36px;
   display: block;
+  box-sizing: border-box;
 }
 
 .input-wrapper {
   display: flex;
-  margin-right: 70px;
   width: 288px;
+  margin-bottom: 36px;
 }
 
 .input-left {
@@ -409,15 +421,14 @@ fieldset {
 
 input[type=range] {
   width: 287px;
+  height: 2px;
   margin-bottom: 0;
+  display: inline-block;
 }
 
 .button-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 36px;
-  margin-top: 66px;
-
 }
 
 .button-reset {
@@ -428,6 +439,7 @@ input[type=range] {
 
 button[type="submit"] {
   padding: 8px 50px;
+  margin-bottom: 48px;
 }
 
 
