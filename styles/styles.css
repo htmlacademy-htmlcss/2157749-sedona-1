@@ -67,6 +67,7 @@ body {
 }
 
 .link {
+  display: block;
   text-decoration: none;
 }
 
@@ -90,8 +91,26 @@ body {
 }
 
 .user-menu {
+  display: flex;
+  align-items: center;
   max-width: 132px;
   margin-left: auto;
+}
+
+.navigation-search {
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 44px;
+  height: 64px;
+}
+
+.navigation-favorite  {
+  background-image: url(../images/icons/heart.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 44px;
+  height: 64px;
 }
 
 .button-want {
@@ -349,6 +368,25 @@ body {
 .social-wrapper {
   display: flex;
 
+}
+
+.social-link{
+  width: 48px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-vk {
+  background-image: url(../images/icons/vk.svg);
+}
+
+.social-telegram {
+  background-image: url(../images/icons/telegram.svg);
+}
+
+.social-youtube {
+  background-image: url(../images/icons/youtube.svg);
 }
 
 .footer-phone {
