@@ -57,7 +57,8 @@ body {
   border-radius: 4px;
   border: none;
   margin: 0;
-  padding: 0;
+
+  padding: 8px 50px;
 
 }
 
@@ -96,6 +97,9 @@ body {
 .button-want {
   display: block;
   margin-left: 12px;
+  margin-right: 70px;
+  align-self: center;
+  padding: 8px 34px;
 }
 
 .navigation-logo {
@@ -273,7 +277,16 @@ body {
 
 .search-text {
   width: 591px;
+  padding-top: 20px;
+  padding-bottom: 54px;
 }
+
+.button-search {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+
 
 /*subscription*/
 .subscription{
@@ -290,7 +303,10 @@ body {
   background-color: #2b3a3f;
   color: #ffffff;
 }
-
+.main-subscription > p {
+  padding-top: 20px;
+  padding-bottom: 54px;
+}
 .subscription-form {
   display: flex;
   align-items: center;
@@ -307,14 +323,16 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
-  padding: 12px 20px;
-  width: 412px;
+  padding: 14px 20px;
+  width: 452px;
   display: block;
   box-sizing: border-box;
+
 }
 
 .subscription-button {
-  padding: 14px 50px;
+  font-size: 20px;
+  line-height: 36px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -356,6 +374,7 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #2b3a3f;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs-list {
@@ -468,20 +487,18 @@ input[type=range] {
 
 
 .button-reset {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 50px;
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 8px 57px;
 }
 
-.button-apply {
-  padding: 8px 44px;
 
-}
 
 /*hotels-sorting*/
 
 .hotels-sorting {
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .sorting-result {
@@ -523,11 +540,28 @@ input[type=range] {
 }
 
 .button-current {
-  background-color: #ffffff;
-  width: 48px;
-  height: 48px;
   border: 2px solid #000000;
-  border-radius: 4px;
+}
+
+.view-tiles {
+  background-image: url(../images/icons/view-tiles.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: 50% 50%;
+}
+
+.view-single {
+  background-image: url(../images/icons/view-single.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: 50% 50%;
+}
+
+.view-list {
+  background-image: url(../images/icons/view-list.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: 50% 50%;
 }
 
 /*hotels-cards*/
@@ -597,6 +631,7 @@ input[type=range] {
   display: flex;
   margin: 0 auto;
   gap: 8px;
+  margin-bottom: 60px;
 }
 
 .pagination-link {
