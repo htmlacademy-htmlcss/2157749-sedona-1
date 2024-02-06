@@ -35,6 +35,12 @@ body {
 .main-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.row {
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .visually-hidden {
@@ -62,9 +68,7 @@ body {
   border-radius: 4px;
   border: none;
   margin: 0;
-
   padding: 8px 50px;
-
 }
 
 .button-blue {
@@ -156,7 +160,7 @@ body {
 
 .bunner-img {
   display: block;
-  padding: 51px 371px 82px 371px;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -166,10 +170,9 @@ body {
 .bunner-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 25px;
-  padding: 69px 0;
+  padding: 69px 70px;
 }
 
 .bunner-text {
@@ -205,10 +208,9 @@ body {
 .advantages-card {
   display: flex;
   flex-direction: column;
-  width: 400px;
   justify-content: center;
   align-items: center;
-  padding: 103px 0;
+  padding: 103px 85px;
 }
 
 .advantages-middle {
@@ -240,21 +242,14 @@ body {
 }
 
 .advantages-text {
-  width: 230px;
-}
-
-.line {
-  border: 2px solid #333333;
-  margin: 30px 0;
-  width: 60px;
-}
-
-.line-white {
-  border-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
 .subtitle-white {
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 /*services*/
@@ -287,10 +282,9 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
-
-
 
 /*search*/
 .main-search {
@@ -298,11 +292,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .search-text {
-  width: 591px;
+
   padding-top: 20px;
   padding-bottom: 54px;
 }
@@ -311,8 +306,6 @@ body {
   font-size: 20px;
   line-height: 36px;
 }
-
-
 
 /*subscription*/
 .subscription {
@@ -434,7 +427,6 @@ body {
   font-weight: 700;
   line-height: 78px;
   padding: 0;
-  ;
   padding-bottom: 40px;
   margin: 0;
 }
@@ -448,7 +440,7 @@ body {
 
 .filter-wrapper {
   display: flex;
-  lign-items: flex-end;
+  align-items: flex-end;
 }
 
 .filter-title {
@@ -509,12 +501,10 @@ fieldset {
   flex-wrap: wrap;
 }
 
-
 .input-filter {
   display: block;
-width: 143px;
-margin-bottom: 46px;
-
+  width: 143px;
+  margin-bottom: 46px;
 }
 
 .input-left {
@@ -534,17 +524,15 @@ input[type=range] {
 }
 
 .filter-buttons {
- display: flex;
- flex-direction: column;
- gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .button-reset {
   background-color: rgba(0, 0, 0, 0.0);
   padding: 8px 58px;
 }
-
-
 
 /*hotels-sorting*/
 
@@ -581,7 +569,6 @@ input[type=range] {
   display: flex;
   justify-content: space-between;
   width: 160px;
-
 }
 
 .button-view {
