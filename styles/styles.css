@@ -203,6 +203,7 @@ body {
 .advantages-wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 1200px;
 }
 
 .advantages-pic {
@@ -212,16 +213,17 @@ body {
 .advantages-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 103px 85px;
-}
-
-
-
-.advantages-item {
+  justify-content: center;
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
+  box-sizing: border-box;
+  padding:103px 85px;
+}
+
+.card-middle {
+  height: 385px;
+  width: 400px;
 }
 
 .advantages-road {
@@ -245,13 +247,14 @@ body {
 
 .advantages-text {
   margin: 0;
-  padding: 0;
 }
+
 
 .subtitle-white {
   color: #ffffff;
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 /*services*/
