@@ -263,11 +263,22 @@ body {
   gap: 30px;
 }
 
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.services-wrapper:nth-child(2){
+  background-color: inherit;
+}
+
 .services-img {
   background-repeat: no-repeat;
   width: 75px;
   height: 75px;
 }
+
 
 .icon-house {
   background-image: url(../images/icons/advantage-housing.svg);
