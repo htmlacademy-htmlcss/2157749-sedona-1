@@ -155,6 +155,7 @@ body {
   background-image: url(../images/pictures/background-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   text-align: center;
   background-color: #2b3a3f;
   color: #ffffff;
@@ -218,7 +219,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
   box-sizing: border-box;
-  padding:103px 85px;
+  padding: 103px 85px;
 }
 
 .card-middle {
@@ -259,8 +260,8 @@ body {
 
 /*services*/
 
-.services-wrapper {
-  gap: 30px;
+.services-heading {
+  margin-bottom: 30px;
 }
 
 .services-list {
@@ -269,27 +270,43 @@ body {
   width: 1200px;
 }
 
-.services-wrapper:nth-child(2){
+
+
+.services-wrapper:nth-child(2) {
   background-color: inherit;
 }
 
-.services-img {
-  background-repeat: no-repeat;
+.services-image-house::before {
+  display: block;
+  content: "";
+  background-image: url(../images/icons/advantage-housing.svg);
   width: 75px;
   height: 75px;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+
 }
 
-
-.icon-house {
-  background-image: url(../images/icons/advantage-housing.svg);
-}
-
-.icon-burger {
+.services-image-food::before {
+  display: block;
+  content: "";
   background-image: url(../images/icons/advantage-food.svg);
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
 }
 
-.icon-gift {
+.services-image-souvenirs::before {
+  display: block;
+  content: "";
   background-image: url(../images/icons/advantage-gift.svg);
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
 }
 
 .services-title {
@@ -312,7 +329,6 @@ body {
 }
 
 .search-text {
-
   padding-top: 20px;
   padding-bottom: 54px;
 }
@@ -339,11 +355,11 @@ body {
   color: #ffffff;
 }
 
-.services-list{
+.services-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  }
+}
 
 .services-text {
   padding-top: 20px;
@@ -503,7 +519,7 @@ fieldset {
 
 .filter-housing {
   margin-left: 70px;
-  margin-right:  70px;
+  margin-right: 70px;
 }
 
 .cost-filter-wrapper {
@@ -513,7 +529,7 @@ fieldset {
   padding-top: 32px;
   margin-left: auto;
   margin-right: 70px;
-  }
+}
 
 .filter-inputs {
   display: flex;
