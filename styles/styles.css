@@ -75,8 +75,6 @@ body {
   background-color: #82B3D3;
 }
 
-
-
 .link {
   display: block;
   text-decoration: none;
@@ -131,8 +129,6 @@ body {
 
 .button-want {
   display: block;
-
-
   align-self: center;
   padding: 8px 34px;
 }
@@ -158,7 +154,6 @@ body {
   height: 2px;
   position: absolute;
   bottom: 0;
-
   }
 
 /*main*/
@@ -234,6 +229,7 @@ body {
   text-align: center;
   box-sizing: border-box;
   padding: 103px 85px;
+  margin: 0;
 }
 
 .card-middle {
@@ -257,7 +253,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-
 }
 
 .line-white::after {
@@ -281,12 +276,10 @@ body {
   margin: 0;
 }
 
-
 .subtitle-white {
   color: #ffffff;
   margin: 0;
   padding: 0;
-
 }
 
 /*services*/
@@ -315,7 +308,6 @@ body {
   height: 75px;
   background-repeat: no-repeat;
   margin-bottom: 30px;
-
 }
 
 .services-image-food::before {
@@ -417,7 +409,6 @@ body {
   width: 452px;
   display: block;
   box-sizing: border-box;
-
 }
 
 .subscription-button {
@@ -438,7 +429,6 @@ body {
 
 .social-wrapper {
   display: flex;
-
 }
 
 .social-link {
@@ -475,7 +465,6 @@ body {
 /*catalog*/
 /*hotels choise*/
 
-
 .hotels-wrapper {
   background-image: url(../images/pictures/filter.jpg);
   background-size: cover;
@@ -498,7 +487,6 @@ body {
   margin: 0;
   margin-bottom: 40px;
 }
-
 
 .breadcrumbs-link {
   font-size: 16px;
