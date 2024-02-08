@@ -138,7 +138,7 @@
           </form>
 
         </section>
-        <section class="hotels-sorting">
+        <section class="hotels-sorting row">
           <h2 class="sorting-result">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
@@ -146,17 +146,17 @@
           </select>
 
           <ul class="list-reset veiw-wrapper">
-            <li>
+            <li class="veiw-item">
               <button class="button-view button-current view-tiles">
                 <span class="visually-hidden">Плитки</span>
               </button>
             </li>
-            <li>
+            <li class="veiw-item">
               <button class="button-view view-single">
                 <span class="visually-hidden">По одной</span>
               </button>
             </li>
-            <li>
+            <li class="veiw-item">
               <button class="button-view view-list">
                 <span class="visually-hidden">Список</span>
               </button>
@@ -165,7 +165,7 @@
 
         </section>
 
-        <section class="hotels-cards">
+        <section class="hotels-cards row">
 
           <ul class="list-reset cards-container">
             <li class="card-wrapper">
@@ -176,12 +176,16 @@
                 <span class="card-text">Гостиница</span>
                 <span class="card-text">от 4000 &#8381;</span>
               </p>
-              <div class="card-button-wrapper">
-                <a class="link button button-detail" href="#">Подробнее</a>
-                <a class="link button button-blue button-favorite" href="#">В избранное</a>
-              </div>
+
+              <ul class="list-reset card-button-wrapper">
+                <li><a class="link button button-detail" href="#">Подробнее</a></li>
+                <li><a class="link button button-blue button-favorite" href="#">В избранное</a></li>
+              </ul>
+
               <div class="rate-wrapper">
-                <div role="img" aria-label="Четыре звезды" class="star star-4"></div>
+                <div role="img" aria-label="Четыре звезды" class="star star-4">
+                  <span class="visually-hidden">Четыре звезды</span>
+                </div>
                 <span class="card-text card-text-uppercase">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -193,12 +197,16 @@
                 <span class="card-text">Гостиница</span>
                 <span class="card-text">от 5000 &#8381;</span>
               </p>
-              <div class="card-button-wrapper">
-                <a class="link button button-detail" href="#">Подробнее</a>
-                <a class="link button button-green button-favorite" href="#"> В избранном</a>
-              </div>
+
+              <ul class="list-reset card-button-wrapper">
+                <li><a class="link button button-detail" href="#">Подробнее</a></li>
+                <li><a class="link button button-green button-favorite" href="#"> В избранном</a></li>
+              </ul>
+
               <div class="rate-wrapper">
-                <div role="img" aria-label="Четыре звезды" class="star star-4"></div>
+                <div role="img" aria-label="Четыре звезды" class="star star-4">
+                  <span class="visually-hidden">Четыре звезды</span>
+                </div>
                 <span class="card-text card-text-uppercase">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -210,12 +218,16 @@
                 <span class="card-text">Гостиница</span>
                 <span class="card-text">от 2500 &#8381;</span>
               </p>
-              <div class="card-button-wrapper">
-                <a class="link button button-detail" href="#">Подробнее</a>
-                <a class="link button button-blue button-favorite" href="#">В избранное</a>
-              </div>
+
+              <ul class="list-reset card-button-wrapper">
+                <li><a class="link button button-detail" href="#">Подробнее</a></li>
+                <li><a class="link button button-blue button-favorite" href="#">В избранное</a></li>
+              </ul>
+
               <div class="rate-wrapper">
-                <div role="img" aria-label="Три звезды" class="star star-3"></div>
+                <div role="img" aria-label="Три звезды" class="star star-3">
+                  <span class="visually-hidden">Три звезды</span>
+                </div>
                 <span class="card-text card-text-uppercase">Рейтинг: 6,9</span>
               </div>
             </li>
@@ -228,12 +240,16 @@
                 <span class="card-text">Гостиница</span>
                 <span class="card-text">от 1500 &#8381;</span>
               </p>
-              <div class="card-button-wrapper">
-                <a class="link button button-brown button-detail" href="#">Подробнее</a>
-                <a class="link button button-blue  button-favorite" href="#">В избранное</a>
-              </div>
+
+              <ul class="list-reset card-button-wrapper">
+                <li><a class="link button button-brown button-detail" href="#">Подробнее</a></li>
+                <li><a class="link button button-blue  button-favorite" href="#">В избранное</a></li>
+              </ul>
+
               <div class="rate-wrapper">
-                <div role="img" aria-label="Две звезды" class="star star-2"></div>
+                <div role="img" aria-label="Две звезды" class="star star-2">
+                  <span class="visually-hidden">Две звезды</span>
+                </div>
                 <span class="card-text card-text-uppercase">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -268,10 +284,11 @@
       <footer>
         <!--subscription-->
 
-        <section class="page-subscription subscription">
+        <section class="page-subscription subscription row">
 
           <h2 class="bunner-text serch-paragraph">Подпишитесь на&nbsp;рассылку</h2>
-          <p class="services-text subscription-text">Только полезная информация и&nbsp;никакого спама,  <span class="bunner-span">честное бойскаутское!</span></p>
+          <p class="services-text subscription-text">Только полезная информация и&nbsp;никакого спама, <span
+              class="bunner-span">честное бойскаутское!</span></p>
 
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Ваш e-mail</label>
@@ -282,7 +299,7 @@
         </section>
         <!--./subscription-->
         <!--social-->
-        <div class="footer-wrapper">
+        <div class="footer-wrapper row">
           <ul class="list-reset social-wrapper">
             <li>
               <a class="link social-link social-vk" href="https://vk.com/htmlacademy">
