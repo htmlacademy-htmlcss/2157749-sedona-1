@@ -75,14 +75,7 @@ body {
   background-color: #82B3D3;
 }
 
-.navigation-link[aria-current="page"]::after{
-  display: block;
-  content: "";
-  background-image: url(../images/pictures/line-current.svg);
-  margin-top: auto;
-  width: 68px;
-  height: 2px;
-}
+
 
 .link {
   display: block;
@@ -154,7 +147,19 @@ body {
   line-height: 24px;
   color: #000000;
   padding: 20px 16px;
+  position: relative;
 }
+
+.navigation-link[aria-current="page"]::after{
+  display: block;
+  content: "";
+  background-image: url(../images/pictures/line-current.svg);
+  width: 68px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+
+  }
 
 /*main*/
 
