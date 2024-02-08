@@ -75,6 +75,15 @@ body {
   background-color: #82B3D3;
 }
 
+.navigation-link[aria-current="page"]::after{
+  display: block;
+  content: "";
+  background-image: url(../images/pictures/line-current.svg);
+  margin-top: auto;
+  width: 68px;
+  height: 2px;
+}
+
 .link {
   display: block;
   text-decoration: none;
@@ -152,10 +161,10 @@ body {
 
 /*bunner*/
 .main-bunner {
-  background-image: url(../images/pictures/background-hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url(../images/pictures/divider-hero.svg), url(../images/pictures/background-hero.jpg);
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center center;
   text-align: center;
   background-color: #2b3a3f;
   color: #ffffff;
@@ -243,9 +252,26 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 60px;
+
 }
 
+.line-white::after {
+  display: block;
+  content: "";
+  background-image: url(../images/pictures/line-white.svg);
+  width: 60px;
+  height: 2px;
+  margin: 30px auto;
+}
+
+.line-gray::after{
+  display: block;
+  content: "";
+  background-image: url(../images/pictures/line-gray.svg);
+  width: 60px;
+  height: 2px;
+  margin: 30px auto;
+}
 .advantages-text {
   margin: 0;
 }
@@ -255,7 +281,7 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
+
 }
 
 /*services*/
