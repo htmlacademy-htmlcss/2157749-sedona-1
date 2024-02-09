@@ -154,7 +154,6 @@ body {
 
 /*main*/
 
-
 /*bunner*/
 .main-bunner {
   background-image: url(../images/pictures/divider-hero.svg), url(../images/pictures/background-hero.jpg);
@@ -296,8 +295,6 @@ body {
   flex-wrap: wrap;
   width: 1200px;
 }
-
-
 
 .services-wrapper:nth-child(2) {
   background-color: inherit;
