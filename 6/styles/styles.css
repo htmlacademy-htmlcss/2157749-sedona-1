@@ -584,6 +584,7 @@ input[type=range] {
   height: 20px;
   margin-bottom: 0;
   display: block;
+  min-width: 287px;
 }
 
 .filter-buttons {
