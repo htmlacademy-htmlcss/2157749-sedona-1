@@ -215,7 +215,7 @@ body {
 
 /*advantages*/
 
-.advantages-wrapper {   /* переделал на grid */
+.advantages-wrapper {                  /* переделал на grid */
   /* display: flex;
   flex-wrap: wrap;
   width: 1200px; */
@@ -322,7 +322,7 @@ body {
   margin-bottom: 30px;
 }
 
- .services-list {    /*переделал на grid */
+ .services-list {                /*переделал на grid */
   /* display: flex;
   flex-wrap: wrap; */
   display: grid;
@@ -458,16 +458,21 @@ body {
 
 /*footer*/
 
-.footer-wrapper {
-  display: flex;
+ .footer-wrapper {                    /* переделал на grid  */
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   padding-top: 40px;
   padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .social-wrapper {
   display: flex;
+  justify-self: start;
 }
 
 .social-link {
@@ -497,8 +502,13 @@ body {
   color: #000000;
 }
 
+.phone-wapper{
+  justify-self: center;
+}
+
 .academy-logo {
   display: block;
+  justify-self: end;
 }
 
 /*catalog*/
