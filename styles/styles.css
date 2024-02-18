@@ -188,6 +188,7 @@ body {
   align-items: center;
   gap: 25px;
   padding: 69px 70px;
+  margin-bottom: 21px;
 }
 
 .bunner-text {
@@ -214,10 +215,35 @@ body {
 
 /*advantages*/
 
-.advantages-wrapper {
-  display: flex;
+.advantages-wrapper {   /* переделал на grid */
+  /* display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1200px; */
+  display: grid;
+  grid-template-areas:
+  "real real real"
+  "litle road tourist"
+  "bridge bridge bridge";
+}
+
+.real-grid {
+  grid-area: real;
+}
+
+.little-grid {
+  grid-area: litle;
+}
+
+.road-grid {
+  grid-area: road;
+}
+
+.tourist-grid {
+  grid-area: tourist;
+}
+
+.bridge-grid {
+  grid-area: bridge;
 }
 
 .advantages-pic {
@@ -296,10 +322,11 @@ body {
   margin-bottom: 30px;
 }
 
-.services-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
+ .services-list {    /*переделал на grid */
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .services-wrapper:nth-child(2) {
