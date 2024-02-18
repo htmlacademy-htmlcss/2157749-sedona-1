@@ -32,9 +32,10 @@ body {
   background: #f2f2f2;
 }
 
-.main-wrapper{
-    flex-grow: 1;
+.main-wrapper {
+  flex-grow: 1;
 }
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -215,15 +216,16 @@ body {
 
 /*advantages*/
 
-.advantages-wrapper {                  /* переделал на grid */
+.advantages-wrapper {
+  /* переделал на grid */
   /* display: flex;
   flex-wrap: wrap;
   width: 1200px; */
   display: grid;
   grid-template-areas:
-  "real real real"
-  "litle road tourist"
-  "bridge bridge bridge";
+    "real real real"
+    "litle road tourist"
+    "bridge bridge bridge";
 }
 
 .real-grid {
@@ -322,7 +324,8 @@ body {
   margin-bottom: 30px;
 }
 
- .services-list {                /*переделал на grid */
+.services-list {
+  /*переделал на grid */
   /* display: flex;
   flex-wrap: wrap; */
   display: grid;
@@ -458,16 +461,13 @@ body {
 
 /*footer*/
 
- .footer-wrapper {                    /* переделал на grid  */
-  /* display: flex;
+.footer-wrapper {
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
+
 }
 
 .social-wrapper {
@@ -502,7 +502,7 @@ body {
   color: #000000;
 }
 
-.phone-wapper{
+.phone-wapper {
   justify-self: center;
 }
 
@@ -544,9 +544,7 @@ body {
   color: #ffffff;
 }
 
- .filter-wrapper {                /* переделал на grid  */
-  /* display: flex;
-  align-items: flex-start; */
+.filter-wrapper {
   display: grid;
   grid-template-columns: 150px 150px auto 191px;
   column-gap: 70px;
@@ -563,7 +561,6 @@ body {
 
 fieldset {
   border: 0 none;
-  /* margin: 0 70px 0 0; */
   padding: 0;
 }
 
@@ -574,8 +571,6 @@ fieldset {
   gap: 16px;
   margin: 0;
   padding: 0;
-  /* padding-top: 32px;
-  padding-right: 38px; */
 }
 
 .control {
@@ -596,10 +591,7 @@ fieldset {
   display: flex;
   margin: 0;
   padding: 0;
-  /* padding-top: 32px; */
-  /* margin-left: auto; */
-  /* margin-right: 70px; */
-justify-self: end;
+  justify-self: end;
 }
 
 .filter-inputs {
@@ -726,24 +718,28 @@ input[type=range] {
 
 /*hotels-cards*/
 
-
-
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   margin-bottom: 40px;
+  gap: 20px;
 }
 
 .card-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
   background-color: #e6e6e6;
   padding: 20px;
   gap: 16px;
 }
 
+.card-link {
+  grid-column: 1/-1;
+}
+
+.card-image{
+  margin-bottom: 16px;
+}
 .card-title {
   font-size: 24px;
   font-weight: 700;
@@ -751,12 +747,6 @@ input[type=range] {
   color: #000000;
   text-align: left;
   text-transform: capitalize;
-  margin: 0;
-}
-
-.card-text-wrapper {
-  display: flex;
-  justify-content: space-between;
   margin: 0;
 }
 
@@ -768,10 +758,6 @@ input[type=range] {
   text-transform: uppercase;
 }
 
-.card-button-wrapper {
-  display: flex;
-  gap: 20px;
-}
 
 .button-detail {
   padding: 8px 26px;
@@ -783,8 +769,11 @@ input[type=range] {
 
 .button-green {
   background-color: #7db54f;
+  padding: 8px 19px;
 }
-
+.card-price {
+  text-align: right;
+}
 .rate-wrapper {
   display: flex;
   justify-content: space-between;
@@ -792,7 +781,8 @@ input[type=range] {
 
 .rate-span {
   padding: 8px 12px 8px 23px;
-  text-align: center;
+  text-align: right;
+  font-size: 16px;;
 }
 
 .star {
