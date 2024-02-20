@@ -217,39 +217,13 @@ body {
 /*advantages*/
 
 .advantages-wrapper {
-  /* переделал на grid */
-  /* display: flex;
-  flex-wrap: wrap;
-  width: 1200px; */
   display: grid;
-  grid-template-areas:
-    "real real real"
-    "litle road tourist"
-    "bridge bridge bridge";
-}
-
-.real-grid {
-  grid-area: real;
-}
-
-.little-grid {
-  grid-area: litle;
-}
-
-.road-grid {
-  grid-area: road;
-}
-
-.tourist-grid {
-  grid-area: tourist;
-}
-
-.bridge-grid {
-  grid-area: bridge;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .advantages-pic {
   display: flex;
+  grid-column: 1/-1;
 }
 
 .advantages-card {
@@ -325,9 +299,6 @@ body {
 }
 
 .services-list {
-  /*переделал на grid */
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
