@@ -94,18 +94,21 @@ body {
 
 /*header*/
 .navigation {
-  display: grid;
-  grid-template-columns: 170px 1fr 1fr 160px;
+  /* display: grid;
+  grid-template-columns: 170px 1fr 1fr 160px; */
+  display: flex;
 }
 
 .navigation-logo {
   display: block;
   margin-bottom: -8px;
   position: relative;
+  margin-right: 30px;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -376,10 +379,12 @@ body {
 }
 
 .search-paragraph {
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .search-text {
+  margin: 0;
   margin-bottom: 54px;
 }
 
@@ -501,8 +506,7 @@ body {
 .academy-logo {
   display: block;
   position: relative;
-  top: 18%;
-  left: 33%
+  left: 55px
 }
 
 /*catalog*/
