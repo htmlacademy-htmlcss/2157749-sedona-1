@@ -103,7 +103,6 @@ body {
 }
 
 .navigation-logo {
-  display: block;
   margin-bottom: -10px;
   position: relative;
   margin-right: 10px;
@@ -117,11 +116,11 @@ body {
 
 .user-menu {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 132px;
   margin-left: auto;
-  }
+}
 
 .navigation-search {
   background-image: url(../images/icons/search.svg);
@@ -139,14 +138,13 @@ body {
   height: 64px;
 }
 
-.nav-button-wrapper{
+.nav-button-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
 .button-want {
-  display: block;
-  align-self: center;
+  max-width: 160px;
   padding: 8px 34px;
   margin: 15px 0;
 }
@@ -164,7 +162,7 @@ body {
   display: block;
   content: "";
   background-color: #756257;
-  width: 100%calc(100% - 16px - 16px);
+  width: calc(100% - 16px - 16px);
   height: 2px;
   position: absolute;
   left: 16px;
@@ -198,12 +196,9 @@ body {
 }
 
 .bunner-wrapper {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px; */
   text-align: center;
-  padding: 69px 70px;
+  padding-top: 69px;
+  padding-bottom: 69px;
   margin-bottom: 21px;
 }
 
@@ -224,7 +219,6 @@ body {
 .bunner-heading {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   font-weight: 400;
   margin: 0;
 }
@@ -255,8 +249,7 @@ body {
   margin: 0;
 }
 
-.advantages-card:first-child,
-.advantages-card:last-child {
+.advantages-blue {
   padding: 102px 85px;
 }
 
@@ -266,8 +259,8 @@ body {
   padding: 80px 85px;
 }
 
-.advantages-road {
-  background-color: rgba(131, 179, 211, 0.20);
+.advantages-light-gray {
+  background-color: #83b3d333;
 }
 
 
@@ -312,9 +305,10 @@ body {
 }
 
 /*services*/
-
-.services-heading {
-  margin-bottom: 30px;
+.services-wrapper {
+  width: 400px;
+  height: 385px;
+  padding: 80px 85px;
 }
 
 .services-span {
@@ -338,6 +332,7 @@ body {
   width: 75px;
   height: 75px;
   background-repeat: no-repeat;
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -349,6 +344,7 @@ body {
   width: 75px;
   height: 75px;
   background-repeat: no-repeat;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -370,10 +366,6 @@ body {
 }
 
 .services-title {
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center; */
   padding-top: 64px;
   padding-bottom: 64px;
   text-align: center;
@@ -387,6 +379,7 @@ body {
   align-items: center;
   padding-top: 96px;
   padding-bottom: 96px;
+  text-align: center;
 }
 
 .search-paragraph {
@@ -408,9 +401,7 @@ body {
 .subscription {
   padding-top: 96px;
   padding-bottom: 104px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .main-subscription {
@@ -479,7 +470,7 @@ body {
   display: flex;
   justify-self: start;
   position: relative;
-  /* top: -15px; */
+  top: -11px;
 }
 
 .social-link {
@@ -508,7 +499,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   position: relative;
-  /* top: -25px; */
+  top: -11px;
   margin: 15px 0;
 }
 
@@ -519,7 +510,7 @@ body {
 .academy-logo {
   display: block;
   position: relative;
-  /* top: -17px; */
+  top: -11px;
 }
 
 /*catalog*/
