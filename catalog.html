@@ -42,8 +42,9 @@
               </a>
             </li>
           </ul>
-
+          <div class="nav-button-wrapper">
           <a class="link button button-want" href="catalog.html">Хочу сюда!</a>
+          </div>
         </nav>
         <!--./navigation-->
       </header>
@@ -118,22 +119,23 @@
               </ul>
 
             </fieldset>
+            <div class="filter-inputs-buttons">
+              <fieldset class="cost-filter-wrapper">
 
-            <fieldset class="cost-filter-wrapper">
+                <legend class="filter-title">Стоимость, &#8381;</legend>
+                <div class="filter-inputs">
+                  <input class="input-filter input-left subscription-input" type="number" placeholder="от" value="">
 
-              <legend class="filter-title">Стоимость, &#8381;</legend>
-              <div class="filter-inputs">
-                <input class="input-filter input-left subscription-input" type="number" placeholder="от" value="">
+                  <input class="input-filter input-right subscription-input" type="number" placeholder="до" value="">
 
-                <input class="input-filter input-right subscription-input" type="number" placeholder="до" value="">
+                  <input type="range" min="0" max="9000">
+                </div>
 
-                <input type="range" min="0" max="9000">
+              </fieldset>
+              <div class="filter-buttons">
+                <button class="button button-blue" type="submit">Применить</button>
+                <button class="button button-reset" type="reset">Сбросить</button>
               </div>
-
-            </fieldset>
-            <div class="filter-buttons">
-              <button class="button button-blue" type="submit">Применить</button>
-              <button class="button button-reset" type="reset">Сбросить</button>
             </div>
           </form>
 
@@ -177,32 +179,33 @@
               <span class="card-text">Гостиница</span>
               <span class="card-text card-price">от 4000 &#8381;</span>
 
-              <a class="link button button-detail" href="#">Подробнее</a>
-              <a class="link button button-blue button-favorite" href="#">В избранное</a>
-
-              <div role="img" aria-label="Четыре звезды" class="star star-4">
-                <span class="visually-hidden">Четыре звезды</span>
+              <a class="link button card-button" href="#">Подробнее</a>
+              <a class="link button button-blue card-button" href="#">В избранное</a>
+              <div class="rate-wrapper">
+                <div role="img" aria-label="Четыре звезды" class="star star-4">
+                  <span class="visually-hidden">Четыре звезды</span>
+                </div>
+                <span class="card-text card-text-uppercase rate-span">Рейтинг: 8,5</span>
               </div>
-              <span class="card-text card-text-uppercase rate-span">Рейтинг: 8,5</span>
-
             </li>
 
             <li class="card-wrapper">
               <a href="" class="link card-link">
-                <img class="card-image" src="./images/catalog/villas.jpg" width="300" height="212" alt="Горы на фоне радуги">
+                <img class="card-image" src="./images/catalog/villas.jpg" width="300" height="212"
+                  alt="Горы на фоне радуги">
                 <h3 class="card-title">Villas at Poco Diablo</h3>
               </a>
               <span class="card-text">Гостиница</span>
               <span class="card-text card-price">от 5000 &#8381;</span>
 
-              <a class="link button button-detail" href="#">Подробнее</a>
-              <a class="link button button-green button-favorite" href="#"> В избранном</a>
-
-              <div role="img" aria-label="Четыре звезды" class="star star-4">
-                <span class="visually-hidden">Четыре звезды</span>
+              <a class="link button card-button" href="#">Подробнее</a>
+              <a class="link button button-green card-button" href="#"> В избранном</a>
+              <div class="rate-wrapper">
+                <div role="img" aria-label="Четыре звезды" class="star star-4">
+                  <span class="visually-hidden">Четыре звезды</span>
+                </div>
+                <span class="card-text card-text-uppercase rate-span">Рейтинг: 9,2</span>
               </div>
-              <span class="card-text card-text-uppercase rate-span">Рейтинг: 9,2</span>
-
             </li>
 
             <li class="card-wrapper">
@@ -214,14 +217,14 @@
               <span class="card-text">Гостиница</span>
               <span class="card-text card-price">от 2500 &#8381;</span>
 
-              <a class="link button button-detail" href="#">Подробнее</a>
-              <a class="link button button-blue button-favorite" href="#">В избранное</a>
-
-              <div role="img" aria-label="Три звезды" class="star star-3">
-                <span class="visually-hidden">Три звезды</span>
+              <a class="link button card-button" href="#">Подробнее</a>
+              <a class="link button button-blue card-button" href="#">В избранное</a>
+              <div class="rate-wrapper">
+                <div role="img" aria-label="Три звезды" class="star star-3">
+                  <span class="visually-hidden">Три звезды</span>
+                </div>
+                <span class="card-text card-text-uppercase rate-span">Рейтинг: 6,9</span>
               </div>
-              <span class="card-text card-text-uppercase rate-span">Рейтинг: 6,9</span>
-
             </li>
 
             <li class="card-wrapper">
@@ -233,14 +236,15 @@
               <span class="card-text">Гостиница</span>
               <span class="card-text card-price">от 1500 &#8381;</span>
 
-              <a class="link button button-brown button-detail" href="#">Подробнее</a>
-              <a class="link button button-blue  button-favorite" href="#">В избранное</a>
+              <a class="link button button-brown card-button" href="#">Подробнее</a>
+              <a class="link button button-blue card-button" href="#">В избранное</a>
 
-              <div role="img" aria-label="Две звезды" class="star star-2">
-                <span class="visually-hidden">Две звезды</span>
+              <div class="rate-wrapper">
+                <div role="img" aria-label="Две звезды" class="star star-2">
+                  <span class="visually-hidden">Две звезды</span>
+                </div>
+                <span class="card-text card-text-uppercase rate-span">Рейтинг: 5,0</span>
               </div>
-              <span class="card-text card-text-uppercase rate-span">Рейтинг: 5,0</span>
-
             </li>
 
           </ul>

@@ -62,7 +62,7 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -75,6 +75,7 @@ body {
   border: none;
   margin: 0;
   padding: 8px 50px;
+  box-sizing: border-box;
 }
 
 .button-blue {
@@ -97,13 +98,15 @@ body {
   /* display: grid;
   grid-template-columns: 170px 1fr 1fr 160px; */
   display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .navigation-logo {
   display: block;
-  margin-bottom: -8px;
+  margin-bottom: -10px;
   position: relative;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .navigation-list {
@@ -114,11 +117,11 @@ body {
 
 .user-menu {
   display: flex;
+  flex-wrap: wrap ;
   align-items: center;
   max-width: 132px;
   margin-left: auto;
-  margin-right: 20px;
-}
+  }
 
 .navigation-search {
   background-image: url(../images/icons/search.svg);
@@ -136,10 +139,16 @@ body {
   height: 64px;
 }
 
+.nav-button-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .button-want {
   display: block;
   align-self: center;
   padding: 8px 34px;
+  margin: 15px 0;
 }
 
 .navigation-link {
@@ -155,10 +164,13 @@ body {
   display: block;
   content: "";
   background-color: #756257;
-  width: 68px;
+  width: 100%calc(100% - 16px - 16px);
   height: 2px;
   position: absolute;
-  bottom: 0;
+  left: 16px;
+  right: 16px;
+  bottom: -2px;
+
 }
 
 /*main*/
@@ -227,6 +239,8 @@ body {
 .advantages-pic {
   display: flex;
   grid-column: 1/-1;
+  background-color: #82B3D3;
+  color: #ffffff;
 }
 
 .advantages-card {
@@ -256,10 +270,7 @@ body {
   background-color: rgba(131, 179, 211, 0.20);
 }
 
-.advantages-blue {
-  background-color: #82B3D3;
-  color: #ffffff;
-}
+
 
 .advantages-header {
   font-size: 24px;
@@ -459,6 +470,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 720px 1fr;
   align-items: center;
+  gap: 41px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
@@ -466,6 +478,8 @@ body {
 .social-wrapper {
   display: flex;
   justify-self: start;
+  position: relative;
+  /* top: -15px; */
 }
 
 .social-link {
@@ -494,9 +508,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   position: relative;
-  left: 15px;
-  top: 5px;
-  padding-bottom: 15px;
+  /* top: -25px; */
+  margin: 15px 0;
 }
 
 .phone-wapper {
@@ -506,7 +519,7 @@ body {
 .academy-logo {
   display: block;
   position: relative;
-  left: 55px
+  /* top: -17px; */
 }
 
 /*catalog*/
@@ -588,12 +601,17 @@ fieldset {
   display: flex;
 }
 
+.filter-inputs-buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 70px;
+}
+
 .cost-filter-wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-self: end;
-  margin-left: auto;
 }
 
 .filter-inputs {
@@ -603,7 +621,6 @@ fieldset {
 }
 
 .input-filter {
-  display: block;
   width: 143px;
   margin-bottom: 30px;
 }
@@ -618,7 +635,6 @@ fieldset {
 }
 
 input[type=range] {
-  /* margin-right: 70px; */
   height: 20px;
   margin-bottom: 0;
   display: block;
@@ -629,9 +645,7 @@ input[type=range] {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  /* padding-top: 58px; */
-  align-self: end;
-  justify-self: end;
+  align-self: flex-end;
 }
 
 .button-reset {
@@ -730,7 +744,8 @@ input[type=range] {
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
   padding: 20px;
   row-gap: 16px;
   column-gap: 20px;
@@ -762,19 +777,14 @@ input[type=range] {
   text-transform: uppercase;
 }
 
-
-.button-detail {
-  padding: 8px 24px;
-}
-
-.button-favorite {
-  padding: 8px 18px;
-  justify-self: end;
+.card-button {
+  width: 140px;
+  padding: 8px 16px;
 }
 
 .button-green {
   background-color: #7db54f;
-  padding: 8px 17px;
+
 }
 
 .card-price {
@@ -784,20 +794,22 @@ input[type=range] {
 .rate-wrapper {
   display: flex;
   justify-content: space-between;
+  grid-column: 1/-1
 }
 
 .rate-span {
   padding: 8px 22px 8px 23px;
-  text-align: right;
   font-size: 16px;
-  justify-self: center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f2f2f2;
 }
 
 .star {
   width: 105px;
   height: 17px;
   padding: 10px 0 10px 0;
-  margin-right: auto;
+  display: inline-block;
 }
 
 .star::before {
