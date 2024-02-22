@@ -238,7 +238,8 @@ body {
   margin: 0;
 }
 
-.advantages-padding {
+.advantages-card:first-child,
+.advantages-card:last-child {
   padding: 102px 85px;
 }
 
@@ -487,10 +488,10 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
-  margin: auto;
   position: relative;
   left: 15px;
   top: 5px;
+  padding-bottom: 15px;
 }
 
 .phone-wapper {
@@ -538,9 +539,12 @@ body {
 }
 
 .filter-wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 150px 150px auto 191px;
-  column-gap: 70px;
+  column-gap: 70px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
 }
 
 
@@ -585,6 +589,7 @@ fieldset {
   margin: 0;
   padding: 0;
   justify-self: end;
+  margin-left: auto;
 }
 
 .filter-inputs {
@@ -754,16 +759,17 @@ input[type=range] {
 
 
 .button-detail {
-  padding: 8px 26px;
+  padding: 8px 24px;
 }
 
 .button-favorite {
-  padding: 8px 20px;
+  padding: 8px 18px;
+  justify-self: end;
 }
 
 .button-green {
   background-color: #7db54f;
-  padding: 8px 19px;
+  padding: 8px 17px;
 }
 
 .card-price {
