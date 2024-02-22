@@ -136,6 +136,23 @@ body {
   background-position: 50% 50%;
   width: 44px;
   height: 64px;
+  position: relative;
+  display: flex;
+}
+
+.navigation-favorite::after{
+  border-radius: 50%;
+  background-color: #7db54f;
+  color: #ffffff;
+  content: "12";
+  padding: 5px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  position: absolute;
+  top: 9px;
+  left: 19px;
+
 }
 
 .nav-button-wrapper {
@@ -144,7 +161,6 @@ body {
 }
 
 .button-want {
-  max-width: 160px;
   padding: 8px 34px;
   margin: 15px 0;
 }
