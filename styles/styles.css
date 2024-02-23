@@ -78,8 +78,93 @@ body {
   box-sizing: border-box;
 }
 
+.button-want {
+  padding: 8px 34px;
+  margin: 15px 0;
+}
+
+.button-brown:hover {
+  background: #615048;
+}
+
+.button-brown:focus {
+  background: #615048;
+}
+
+.button-brown:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown:disabled {
+  background: #e5e5e5;
+}
+
 .button-blue {
   background-color: #82B3D3;
+}
+
+.button-blue:hover {
+  background: #68a2ca;
+}
+
+.button-blue:focus {
+  background: #68a2ca;
+}
+
+.button-blue:active {
+  background: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
+}
+
+.button-green {
+  background-color: #7db54f;
+}
+
+.button-green:hover {
+  background: #6c9e42;
+}
+
+.button-green:focus {
+  background: #6c9e42;
+}
+
+.button-green:active {
+  background: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
+}
+
+.button-reset {
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 8px 58px;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  box-sizing: border-box;
+  outline: 3px solid #83b3d3;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
+  color: #ffffff;
 }
 
 .link {
@@ -130,6 +215,23 @@ body {
   height: 64px;
 }
 
+.navigation-search:hover {
+  outline: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.navigation-search:focus {
+  box-sizing: border-box;
+  outline: 2px solid rgb(104, 162, 202);
+  border-radius: 4px;
+}
+
+.navigation-search:active {
+  box-sizing: border-box;
+  outline: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
 .navigation-favorite {
   background-image: url(../images/icons/heart.svg);
   background-repeat: no-repeat;
@@ -140,7 +242,25 @@ body {
   display: flex;
 }
 
-.navigation-favorite::after{
+.navigation-favorite:hover {
+  outline: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.navigation-favorite:focus {
+  box-sizing: border-box;
+  outline: 2px solid rgb(104, 162, 202);
+  border-radius: 4px;
+}
+
+.navigation-favorite:active {
+  box-sizing: border-box;
+  outline: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+
+.navigation-favorite::after {
   border-radius: 50%;
   background-color: #7db54f;
   color: #ffffff;
@@ -160,10 +280,6 @@ body {
   flex-wrap: wrap;
 }
 
-.button-want {
-  padding: 8px 34px;
-  margin: 15px 0;
-}
 
 .navigation-link {
   font-size: 20px;
@@ -655,11 +771,6 @@ input[type=range] {
   align-self: flex-end;
 }
 
-.button-reset {
-  background-color: rgba(0, 0, 0, 0.0);
-  padding: 8px 58px;
-}
-
 /*hotels-sorting*/
 
 .hotels-sorting {
@@ -787,11 +898,6 @@ input[type=range] {
 .card-button {
   width: 140px;
   padding: 8px 16px;
-}
-
-.button-green {
-  background-color: #7db54f;
-
 }
 
 .card-price {
