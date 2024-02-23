@@ -61,6 +61,8 @@ body {
   overflow: hidden;
 }
 
+/* buttons  */
+
 .button {
   display: inline-block;
   font-family: inherit;
@@ -101,7 +103,7 @@ body {
 }
 
 .button-blue {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-blue:hover {
@@ -167,6 +169,8 @@ body {
   color: #ffffff;
 }
 
+/* links */
+
 .link {
   display: block;
   text-decoration: none;
@@ -179,9 +183,10 @@ body {
 }
 
 /*header*/
+
+/* navigation */
+
 .navigation {
-  /* display: grid;
-  grid-template-columns: 170px 1fr 1fr 160px; */
   display: flex;
   gap: 20px;
   align-items: flex-start;
@@ -198,6 +203,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+
+/* user-menu */
 
 .user-menu {
   display: flex;
@@ -272,7 +279,6 @@ body {
   position: absolute;
   top: 9px;
   left: 19px;
-
 }
 
 .nav-button-wrapper {
@@ -300,7 +306,6 @@ body {
   left: 16px;
   right: 16px;
   bottom: -2px;
-
 }
 
 /*main*/
@@ -394,8 +399,6 @@ body {
 .advantages-light-gray {
   background-color: #83b3d333;
 }
-
-
 
 .advantages-header {
   font-size: 24px;
@@ -580,6 +583,7 @@ body {
 }
 
 .subscription-button {
+  min-width: 232px;
   font-size: 20px;
   line-height: 36px;
   border-radius: 0 4px 4px 0;
@@ -588,8 +592,6 @@ body {
 /*footer*/
 
 .footer-wrapper {
-  /* display: flex;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: 1fr 720px 1fr;
   align-items: center;
@@ -679,9 +681,6 @@ body {
 }
 
 .filter-wrapper {
-  /* display: grid;
-  grid-template-columns: 150px 150px auto 191px;
-  column-gap: 70px; */
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
@@ -898,6 +897,7 @@ input[type=range] {
 .card-button {
   width: 140px;
   padding: 8px 16px;
+  text-align: center;
 }
 
 .card-price {
@@ -956,6 +956,8 @@ input[type=range] {
 }
 
 .pagination-link {
+  width: 60px;
+  height: 60px;
   color: #000000;
   border-radius: 4px;
   font-size: 20px;
@@ -964,7 +966,7 @@ input[type=range] {
   text-transform: uppercase;
   text-align: center;
   padding: 13px 25px;
-
+box-sizing: border-box;
 }
 
 .pagination-item:last-child .pagination-link {
