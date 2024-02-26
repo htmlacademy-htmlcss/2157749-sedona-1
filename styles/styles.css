@@ -634,20 +634,24 @@ body {
 .social-link {
   width: 48px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  position: relative;
+  }
+
+
+.social-icon {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }
 
-.social-vk {
-  background-image: url(../images/icons/vk.svg);
+.social-icon:hover path,
+.social-icon:focus path {
+  fill: #68a2ca;
 }
 
-.social-telegram {
-  background-image: url(../images/icons/telegram.svg);
-}
-
-.social-youtube {
-  background-image: url(../images/icons/youtube.svg);
+.social-icon:active path {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone {
@@ -656,6 +660,18 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.footer-phone:hover {
+  color: rgb(117, 97, 87);
+}
+
+.footer-phone:focus {
+  color: rgb(117, 97, 87);
+}
+
+.footer-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .phone-wapper {
@@ -673,6 +689,18 @@ body {
 .academy-logo {
   display: block;
   margin-left: auto;
+}
+
+.academy-img:hover {
+  fill: rgb(117, 97, 87);
+}
+
+.academy-img:focus {
+  fill: rgb(117, 97, 87);
+}
+
+.academy-img:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*catalog*/
