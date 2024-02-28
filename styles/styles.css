@@ -657,8 +657,8 @@ body {
 .social-icon {
   display: inline-block;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 12px;
+  left: 13px;
 }
 
 .social-icon:hover path,
