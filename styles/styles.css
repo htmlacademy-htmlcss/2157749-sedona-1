@@ -814,9 +814,13 @@ label:has([type="email"]:disabled) {
   margin-left: auto;
 }
 
-.academy-img:hover {
+.academy-logo:hover .academy-img{
   fill: rgb(117, 97, 87);
 }
+
+/* .academy-img:hover {
+
+} */
 
 .academy-img:focus {
   fill: rgb(117, 97, 87);
