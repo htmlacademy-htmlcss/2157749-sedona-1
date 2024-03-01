@@ -922,6 +922,7 @@ label:has([type="email"]:disabled) {
   line-height: 24px;
   text-transform: capitalize;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .filter-fieldset {
