@@ -991,7 +991,6 @@ label:has([type="email"]:disabled) {
   width: 143px;
   margin: 0;
   padding: 12px 20px;
-
 }
 
 .input-left {
@@ -1056,8 +1055,10 @@ label:has([type="email"]:disabled) {
 .filter-buttons {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  align-self: flex-end;
+  gap: 28px;
+  top: 52px;
+  position: relative;
+  left: 5px;
 }
 
 /*hotels-sorting*/
