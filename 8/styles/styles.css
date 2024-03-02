@@ -74,11 +74,11 @@ body {
   color: #ffffff;
   width: fit-content;
   border-radius: 4px;
-  border: none;
   margin: 0;
   padding: 8px 50px;
   box-sizing: border-box;
   cursor: pointer;
+  border: 3px solid transparent;
 }
 
 .user-button {
@@ -95,7 +95,7 @@ body {
   border-color: #000000;
 }
 
-.user-button:focus {
+.user-button:focus-visible {
   border-color: #68a2ca;
   outline: none;
 }
@@ -112,7 +112,7 @@ body {
 
 .button-want {
   padding: 8px 34px;
-  margin: 15px 0;
+  margin: 11px 0;
 }
 
 .button-brown:hover {
@@ -186,13 +186,12 @@ body {
   opacity: 0.6;
 }
 
-.button-reset:focus {
-  box-sizing: border-box;
-  border: 3px solid #83b3d3;
+.button-reset:focus-visible {
+  border-color: #83b3d3;
 }
 
 .button-reset:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
 .button-reset:disabled{
@@ -208,13 +207,14 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .button-view:hover {
   border-color: #000000;
 }
 
-.button-view:focus {
+.button-view:focus-visible {
   border-color: #68a2ca;
   outline: none;
 }
@@ -259,9 +259,17 @@ body {
 }
 
 .navigation-logo {
-  margin-bottom: -10px;
+  margin-bottom: -8px;
   position: relative;
   margin-right: 10px;
+}
+
+.navigation-logo:hover {
+  opacity: 0.6;
+}
+
+.navigation-logo:active{
+  opacity: 0.3;
 }
 
 .navigation-list {
@@ -283,7 +291,7 @@ body {
   color: #756157;
 }
 
-.navigation-link:focus {
+.navigation-link:focus-visible {
   color: #756157;
 }
 
@@ -641,29 +649,6 @@ label:has([type="email"]:disabled) {
   flex-wrap: wrap;
 }
 
-/* .social-link {
-  display: inline-block;
-  width: 48px;
-  height: 40px;
-  background-color: #83b3d3;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: 50% 50%;
-  -webkit-mask-position: 50% 50%;
-}
-
-.social-link:hover {
-  background: #68a2ca;
-}
-
-.social-link:focus {
-  background: #68a2ca;
-}
-
-.social-link:active {
-  background: rgba(104, 162, 202, 0.3);
-} */
-
 .social-vk {
   display: inline-block;
   width: 48px;
@@ -865,6 +850,17 @@ label:has([type="email"]:disabled) {
   color: #ffffff;
 }
 
+.link-home {
+  background-image: url(../images/icons/breadcrumbs-home.svg);
+  content: "";
+  width: 13px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
 .breadcrumbs-item {
   display: flex;
 }
@@ -881,15 +877,15 @@ label:has([type="email"]:disabled) {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link:focus-visible {
   color: rgb(255, 255, 255);
 }
 
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
 .breadcrumbs-image {
