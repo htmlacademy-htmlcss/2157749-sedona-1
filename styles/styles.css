@@ -78,7 +78,7 @@ body {
   padding: 8px 50px;
   box-sizing: border-box;
   cursor: pointer;
-  border: 3px solid transparent;
+  border: none;
 }
 
 .user-button {
@@ -113,8 +113,6 @@ body {
 .button-want {
   padding: 8px 34px;
   margin: 14px 0;
-  border: none;
-
 }
 
 .button-brown:hover {
@@ -182,6 +180,7 @@ body {
 .button-reset {
   background-color: rgba(0, 0, 0, 0.0);
   padding: 8px 58px;
+  border: 3px solid transparent;
 }
 
 .button-reset:hover {
@@ -1140,7 +1139,6 @@ label:has([type="email"]:disabled) {
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 1fr auto;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
@@ -1155,12 +1153,13 @@ label:has([type="email"]:disabled) {
 
 .card-image {
   margin-bottom: 16px;
+  display: block;
 }
 
 .card-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 30px;
   color: #000000;
   text-align: left;
   text-transform: capitalize;
