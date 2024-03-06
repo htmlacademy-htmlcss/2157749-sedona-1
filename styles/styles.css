@@ -903,12 +903,11 @@ label:has([type="email"]:disabled) {
 
 .filter-input-label:first-child {
   border-radius: 4px 0 0 4px;
-
+  background-color: transparent;
 }
 
 .filter-input-label:last-child {
   border-radius: 0 4px 4px 0;
-
 }
 
 .input-filter {
@@ -922,19 +921,13 @@ label:has([type="email"]:disabled) {
   padding-right: 40px;
 }
 
-.input-left {
-  background-color: transparent;
-  appearance: none;
-}
-
 .input-right {
-  border-radius: 0 4px 4px 0;
+  background-color: transparent;
 }
 
 .input-label-span {
   position: absolute;
   color: #000000;
-  ;
   top: 50%;
   transform: translateY(-50%);
   right: 16px;
