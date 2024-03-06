@@ -126,12 +126,14 @@
                 <legend class="filter-title">Стоимость, &#8381;</legend>
                 <div class="filter-inputs">
                   <div class="input-filters-wrapper">
-                    <label class="filter-input-label">
-                      <input class="input-filter input-left subscription-input" type="number" placeholder="0            от" value="">
+                    <label class="filter-input-label" for="input-left">
+                      <span class="input-label-span">от</span>
+                      <input class="input-filter input-left subscription-input" type="number" placeholder="0" value="" id="input-left">
                     </label>
-                    <label class="filter-input-label">
-                      <input class="input-filter input-right subscription-input" type="number" placeholder="9000      до"
-                        value="">
+                    <label class="filter-input-label" for="input-right">
+                      <span class="input-label-span">до</span>
+                      <input class="input-filter input-right subscription-input" type="number" placeholder="9000"
+                        value="" id="input-right">
                     </label>
                   </div>
                   <div class="range-scale">
@@ -266,7 +268,7 @@
           <!--pagination-->
           <ol class="list-reset pagination-container">
             <li>
-              <a class="link pagination-link" href="#" aria-current="page">1</a>
+              <a class="link pagination-link pagination-button-white" href="#" aria-current="page">1</a>
             </li>
             <li>
               <a class="link pagination-link button-blue link-white pagination-focus" href="#">2</a>
@@ -278,7 +280,7 @@
               <a class="link pagination-link button-blue link-white pagination-focus" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="link pagination-link ellipsis-link" href="#">...</a>
+              <a class="link pagination-link pagination-button-white" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="link pagination-link button-blue link-white pagination-focus" href="#">10</a>
