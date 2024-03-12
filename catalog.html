@@ -75,21 +75,24 @@
               <legend class="filter-title">Инфраструктура</legend>
               <ul class="list-reset filter-list">
                 <li>
-                  <label class="filter-item">
-                    <input class="control" type="checkbox" name="pool" checked>
-                    Бacceйн
+                  <label class="control" for="pool">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" id="pool" checked>
+                    <span class="control-mark control-mark-checkbox"></span>
+                    <span class="control-label">Бacceйн</span>
                   </label>
                 </li>
                 <li>
-                  <label class="filter-item">
-                    <input class="control" type="checkbox" name="parking" checked>
-                    Парковка
+                  <label class="control" for="parking">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked>
+                    <span class="control-mark control-mark-checkbox"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li>
-                  <label class="filter-item">
-                    <input class="control" type="checkbox" name="wi-fi">
-                    Wi-Fi
+                  <label class="control" for="wi-fi">
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi" id="wi-fi">
+                    <span class="control-mark control-mark-checkbox"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -100,21 +103,27 @@
 
               <ul class="list-reset filter-list">
                 <li>
-                  <label class="filter-item">
-                    <input class="control" type="radio" name="housing-type" value="hotel" checked>
-                    Гостиница
+                  <label class="control" for="hotel">
+                    <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel"
+                      id="hotel" checked>
+                    <span class="control-mark control-mark-radio"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li>
-                  <label class="filter-item">
-                    <input class="control" type="radio" name="housing-type" value="motel">
-                    Мотель
+                  <label class="control" for="motel">
+                    <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel"
+                      id="motel">
+                    <span class="control-mark control-mark-radio"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li>
-                  <label class="filter-item">
-                    <input class="control" type="radio" name="housing-type" value="apartments">
-                    Апартаменты
+                  <label class="control" for="apartments">
+                    <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments"
+                      id="apartments">
+                    <span class="control-mark control-mark-radio"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -128,7 +137,8 @@
                   <div class="input-filters-wrapper">
                     <label class="filter-input-label" for="input-left">
                       <span class="input-label-span">от</span>
-                      <input class="input-filter input-left subscription-input" type="number" placeholder="0" value="" id="input-left">
+                      <input class="input-filter input-left subscription-input" type="number" placeholder="0" value=""
+                        id="input-left">
                     </label>
                     <label class="filter-input-label" for="input-right">
                       <span class="input-label-span">до</span>
@@ -159,11 +169,12 @@
         </section>
         <section class="hotels-sorting row">
           <h2 class="sorting-result">Найдено гостиниц: 38</h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-
+          <div class="select">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
           <ul class="list-reset veiw-wrapper">
             <li class="veiw-item">
               <button class="button-view button-current view-tiles">

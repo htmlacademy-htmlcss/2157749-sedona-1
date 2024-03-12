@@ -859,14 +859,90 @@ label:has([type="email"]:disabled) {
   padding: 0;
 }
 
-.control {
+.control-input {
   display: block;
   margin-right: 16px;
 }
 
-.filter-item {
+.control {
   display: flex;
   line-height: 23px;
+  position: relative;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+}
+
+.control-mark-checkbox {
+  border-radius: 4px;
+}
+
+.control:hover .control-mark-checkbox {
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.control-input:focus-visible + .control-mark-checkbox {
+  outline: 3px solid rgb(131, 179, 211);
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.control-input:disabled + .control-mark-checkbox {
+  opacity: 0.3;
+}
+
+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.control:hover .control-mark-radio {
+  width: 19px;
+  height: 19px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.control-input:focus-visible + .control-mark-radio {
+  outline: 3px solid rgb(131, 179, 211);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.control-input:disabled + .control-mark-radio {
+  opacity: 0.3;
+}
+
+
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/icons/checkbox-marker.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3f5e72;
+  content: "";
 }
 
 .filter-inputs-buttons {
@@ -897,7 +973,6 @@ label:has([type="email"]:disabled) {
   display: block;
   margin-right: 2px;
   background-color: #ffffff;
-
   position: relative;
 }
 
@@ -921,8 +996,33 @@ label:has([type="email"]:disabled) {
   padding-right: 40px;
 }
 
+.input-left:hover,
+.input-left:focus-visible {
+  border-radius: 4px 0 0 4px;
+  background: #e6e6e6;
+
+}
+
+.input-left:focus-visible {
+    outline: 3px solid rgb(131, 179, 211);
+}
+
+.input-left:focus-within {
+  border: 2px solid rgb(63, 94, 114);
+}
+
 .input-right {
   background-color: transparent;
+}
+
+.input-right:hover {
+  border-radius: 0 4px 4px 0;
+  background: #e6e6e6;
+}
+
+.input-right:focus-visible {
+  border-radius: 0 4px 4px 0;
+  outline: 3px solid rgb(131, 179, 211);
 }
 
 .input-label-span {
@@ -1017,17 +1117,40 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: auto;
 }
 
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 292px;
+}
+
 .select-control {
+  appearance: none;
   font-family: inherit;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
   width: 292px;
-  height: 49px;
-  border-radius: 0;
+  padding: 14px 20px;
+  background-image: url(../images/icons/select-arrow.svg);
+  background-position: right 21px center;
+  background-repeat: no-repeat;
   color: #333333;
+  box-sizing: border-box;
   border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.select-control:hover,
+.select-control:focus-visible {
+  border: 2px solid rgb(104, 162, 202);
+}
+
+.select-control:active {
+  border: 2px solid rgb(63, 94, 114);
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .veiw-wrapper {
