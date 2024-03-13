@@ -236,7 +236,6 @@ body {
 .link {
   display: block;
   text-decoration: none;
-  transition: background-color 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
 }
 
@@ -597,6 +596,22 @@ body {
   justify-content: center;
 }
 
+.subscription-input-wrapper {
+  position: relative;
+}
+
+.subscription-label-span {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  border: 1px dashed #000000;
+  box-sizing: border-box;
+  z-index: 1;
+  right: 20px;
+  top: 20px;
+}
+
 .subscription-input {
   font-family: inherit;
   font-size: 18px;
@@ -612,7 +627,25 @@ body {
   display: block;
   box-sizing: border-box;
   cursor: pointer;
+  position: relative;
 }
+
+.subscription-input:hover {
+  background: #e6e6e6;
+}
+
+.subscription-input:focus-visible {
+  box-sizing: border-box;
+  outline: 3px solid #83b3d3;
+  background: #e6e6e6;
+}
+
+.subscription-input:placeholder-shown {
+  outline: 2px solid #000000;
+  background: #f2f2f2;
+}
+
+
 
 label:has([type="email"]:disabled) {
   cursor: not-allowed;
@@ -1004,11 +1037,11 @@ label:has([type="email"]:disabled) {
 }
 
 .input-left:focus-visible {
-    outline: 3px solid rgb(131, 179, 211);
+  outline: 3px solid rgb(131, 179, 211);
 }
 
-.input-left:focus-within {
-  border: 2px solid rgb(63, 94, 114);
+.input-left:placeholder-shown {
+  outline: 2px solid #3f5e72;
 }
 
 .input-right {
@@ -1022,7 +1055,7 @@ label:has([type="email"]:disabled) {
 
 .input-right:focus-visible {
   border-radius: 0 4px 4px 0;
-  outline: 3px solid rgb(131, 179, 211);
+  outline: 3px solid #83b3d3;
 }
 
 .input-label-span {
@@ -1031,6 +1064,7 @@ label:has([type="email"]:disabled) {
   top: 50%;
   transform: translateY(-50%);
   right: 16px;
+  z-index: 1;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -1042,7 +1076,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .range-scale {
   position: relative;
   background-color: rgba(255, 255, 255, 0.3);
-  /* opacity: 0.3; */
   width: 287px;
   height: 4px;
   top: 19px;
