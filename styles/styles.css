@@ -1394,7 +1394,9 @@ input[type="number"]::-webkit-outer-spin-button {
   background: #ffffff;
 }
 
-.modal-order-blanc {
+
+
+.modal-order-blank {
   width: 577px;
 
 }
@@ -1414,6 +1416,138 @@ input[type="number"]::-webkit-outer-spin-button {
   cursor: pointer;
 }
 
+.modal-fieldset {
+  border: none;
+}
+
+.modal-date-lable {
+  width: 577px;
+  display: grid;
+  grid-template-columns: auto 440px;
+}
+
+.modal-fieldset:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 23px
+}
+
+.modal-date-heading {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.modal-date-text {
+  display: block;
+  grid-column: 2/3;
+  padding-left: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.text-red {
+  color: #ff5757;
+}
+
+.modal-input-date {
+  padding: 12px 20px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  border: none;
+  background: #f2f2f2;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+  background-image: url(../images/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 402px;
+}
+
+
 .modal-title {
   margin-bottom: 64px;
+}
+
+.modal-fieldset:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 88px;
+}
+
+.quantity {
+  display: grid;
+  grid-template-columns: auto 40px 31px 40px;
+  align-items: center;
+}
+
+.quantity-input {
+  font-family: inherit;
+  font-weight: 700;
+  padding: 14px 10px;
+}
+
+.quantity-heading {
+  padding-right: 48px;
+}
+
+.quantity-heading-info {
+  padding-right: 40px;
+  display: flex;
+  gap: 10px;
+
+}
+
+.quantity-heading-info::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/icons/info-tooltip.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.quantity-button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 24px 20px;
+  border: none;
+  margin: 0;
+}
+
+.quantity-button-minus {
+  display: block;
+  background-image: url(../images/icons/button-minus.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+.quantity-button-plus {
+  display: block;
+  background-image: url(../images/icons/button-plus.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+.quantity-input {
+  border: none;
+  outline: none;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
