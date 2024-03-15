@@ -600,7 +600,7 @@ body {
   position: relative;
 }
 
-.subscription-label-span {
+/* .subscription-label-span {
   display: block;
   position: absolute;
   width: 16px;
@@ -610,7 +610,7 @@ body {
   z-index: 1;
   right: 20px;
   top: 20px;
-}
+} */
 
 .subscription-input {
   font-family: inherit;
@@ -634,14 +634,14 @@ body {
   background: #e6e6e6;
 }
 
-.subscription-input:focus-visible {
+.subscription-input:focus {
   box-sizing: border-box;
-  outline: 3px solid #83b3d3;
+  /* outline: 3px solid #83b3d3; */
   background: #e6e6e6;
 }
 
-.subscription-input:placeholder-shown {
-  outline: 2px solid #000000;
+.subscription-input:placeholder {
+  /* outline: 2px solid #000000; */
   background: #f2f2f2;
 }
 
@@ -1398,7 +1398,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .modal-order-blank {
   width: 577px;
+  display: flex;
+  flex-direction: column;
 
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-close-button {
@@ -1426,10 +1433,11 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-template-columns: auto 440px;
 }
 
-.modal-fieldset:first-child {
+.modal-fieldset {
   display: flex;
   flex-direction: column;
-  gap: 23px
+  padding: 0;
+  margin: 0;
 }
 
 .modal-date-heading {
@@ -1439,6 +1447,9 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 24px;
   text-align: left;
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  align-self: center;
 }
 
 .modal-date-text {
@@ -1447,6 +1458,9 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-left: 20px;
   font-size: 16px;
   text-align: left;
+  min-height: 21px;
+  margin: 0;
+  margin-bottom: 23px;
 }
 
 .text-red {
@@ -1471,15 +1485,15 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position-x: 402px;
 }
 
-
 .modal-title {
   margin-bottom: 64px;
 }
 
-.modal-fieldset:last-child {
+.modal-fieldset-quantity {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 88px;
+  margin-bottom: 48px;
 }
 
 .quantity {
@@ -1544,10 +1558,20 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .quantity-input {
   border: none;
-  outline: none;
   display: block;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-align: center;
+  height: 48px;
+}
+
+.modal-search-button {
+  width: 577px;
+  padding: 18px 77px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
