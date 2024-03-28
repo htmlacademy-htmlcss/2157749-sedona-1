@@ -216,11 +216,6 @@ body {
   border-color: #000000;
 }
 
-.button-view:focus-visible {
-  border-color: #68a2ca;
-  outline: none;
-}
-
 .button-view:active {
   border-color: #000000;
   opacity: 0.3;
@@ -777,6 +772,7 @@ label:has([type="email"]:disabled) {
   color: #ffffff;
   background-color: #2b3a3f;
   padding: 35px 70px 70px 70px;
+  margin: 0;
 }
 
 .hotels-title {
@@ -867,6 +863,11 @@ label:has([type="email"]:disabled) {
   border: 0 none;
   margin: 0;
   padding: 0;
+  width: 150px;
+}
+
+.filter-housing {
+  margin-right: auto;
 }
 
 .filter-list {
@@ -901,11 +902,11 @@ label:has([type="email"]:disabled) {
 
 .control-mark-checkbox {
   border-radius: 4px;
+  background: #ffffff;
 }
 
-.control:hover .control-mark-checkbox {
-  border-radius: 5px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+.control:hover {
+  opacity: 0.6;
 }
 
 .control-input:focus-visible + .control-mark-checkbox {
@@ -914,7 +915,7 @@ label:has([type="email"]:disabled) {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.control-input:disabled + .control-mark-checkbox {
+.control-input:disabled {
   opacity: 0.3;
 }
 
@@ -922,11 +923,7 @@ label:has([type="email"]:disabled) {
   border-radius: 50%;
 }
 
-.control:hover .control-mark-radio {
-  width: 19px;
-  height: 19px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-}
+
 
 .control-input:focus-visible + .control-mark-radio {
   outline: 3px solid rgb(131, 179, 211);
@@ -964,37 +961,41 @@ label:has([type="email"]:disabled) {
 
 .filter-inputs-buttons {
   display: flex;
-  margin-left: auto;
   gap: 70px;
 }
 
 .cost-filter-wrapper {
+  width: 288px;
+  height: 104px;
   margin: 0;
   padding: 0;
 }
 
 .filter-inputs {
-  width: 290px;
+  width: 288px;
+  height: 104px;
   position: relative;
+
 }
 
 .input-filters-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 44px;
+  gap: 2px;
+
 }
 
 .filter-input-label {
   font-family: inherit;
   text-align: right;
   display: block;
-  margin-right: 2px;
-  background-color: #ffffff;
+  background-color:#f2f2f2;
   position: relative;
 }
 
 .filter-input-label:first-child {
   border-radius: 4px 0 0 4px;
-  background-color: transparent;
 }
 
 .filter-input-label:last-child {
@@ -1010,35 +1011,12 @@ label:has([type="email"]:disabled) {
   margin: 0;
   padding: 12px 20px;
   padding-right: 40px;
-}
-
-.input-left:hover,
-.input-left:focus-visible {
-  border-radius: 4px 0 0 4px;
-  background: #e6e6e6;
-
-}
-
-.input-left:focus-visible {
-  outline: 3px solid rgb(131, 179, 211);
-}
-
-.input-left:placeholder-shown {
-  outline: 2px solid #3f5e72;
-}
-
-.input-right {
   background-color: transparent;
 }
 
-.input-right:hover {
-  border-radius: 0 4px 4px 0;
+.input-filter:hover,
+.input-filter:focus-visible {
   background: #e6e6e6;
-}
-
-.input-right:focus-visible {
-  border-radius: 0 4px 4px 0;
-  outline: 3px solid #83b3d3;
 }
 
 .input-label-span {
@@ -1056,19 +1034,19 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.range-scale {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 287px;
-  height: 4px;
-  top: 88px;
-  left: 0;
+input[type="number"] {
+    -moz-appearance: textfield;;
 }
+
+.range-scale {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 288px;
+  height: 4px;
+  }
 
 .range-bar {
   position: absolute;
   height: 4px;
-  left: 0;
   width: 226px;
   background-color: #ffffff;
 }
@@ -1105,7 +1083,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  top: 52px;
+  top: 56px;
   position: relative;
   left: 5px;
 }
@@ -1153,8 +1131,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
-.select-control:hover,
-.select-control:focus-visible {
+.select-control:hover {
   border: 2px solid rgb(104, 162, 202);
 }
 
@@ -1215,6 +1192,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
+  padding-top: 18px;
   row-gap: 16px;
   column-gap: 20px;
   align-items: start;
@@ -1244,10 +1222,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .card-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 28px;
   color: #000000;
   text-align: left;
-  text-transform: capitalize;
   margin: 0;
 }
 
@@ -1300,15 +1277,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .star-4::before {
-  width: 85px;
+  width: 89px;
 }
 
 .star-3::before {
-  width: 59px;
+  width: 66px;
 }
 
 .star-2::before {
-  width: 39px;
+  width: 42px;
 }
 
 /*pagination*/
@@ -1490,6 +1467,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: inherit;
   font-weight: 700;
   padding: 14px 10px;
+  background: #f2f2f2;
 }
 
 .quantity-heading {
@@ -1511,6 +1489,14 @@ position: relative;
   padding: 24px 20px;
   border: none;
   margin: 0;
+}
+
+.quantity-button:hover{
+  background-color: #e9e6e6;
+}
+
+.quantity-button:active {
+  background-color: #b9b8b8;
 }
 
 .quantity-button-minus {
@@ -1537,6 +1523,10 @@ position: relative;
   padding: 0;
   text-align: center;
   height: 48px;
+}
+
+.quantity-input:hover {
+  background-color: #e9e6e6;
 }
 
 .button-info {
