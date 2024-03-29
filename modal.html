@@ -231,25 +231,26 @@
             <form class="modal-form" action="#">
               <fieldset class="modal-fieldset">
                 <legend class="visually-hidden">Период прибывания</legend>
+
                 <label class="modal-date-lable" for="check-in">
                   <p class="modal-date-heading">Дата заезда:</p>
-                  <input class="modal-input-date" type="text" id="check-in" placeholder="Введите дату" value="">
-                  <span class="calendar-image"></span>
-                  <span class="modal-date-text text-red">Мы не можем отправить вас в прошлое.</span>
+                  <input class="modal-input-date" type="text" id="check-in" placeholder="Введите дату" value="27 апреля 2020">
+                  <span class="modal-date-text text-red">Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.</span>
                 </label>
+
                 <label class="modal-date-lable" for="check-out">
                   <p class="modal-date-heading">Дата выезда:</p>
-                  <input class="modal-input-date" type="text" id="check-out" placeholder="Введите дату" value="">
-                  <span class="calendar-image"></span>
-                  <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
+                  <input class="modal-input-date" type="text" id="check-out" placeholder="Введите дату" value="1 сентября 2023">
+                  <span class="modal-date-text">На&nbsp;эти даты есть свободные номера. Пока есть.</span>
                 </label>
+
               </fieldset>
               <fieldset class="modal-fieldset modal-fieldset-quantity">
                 <legend class="visually-hidden">Количество персон</legend>
                 <label for="adult" class="quantity" >
                   <span class="modal-date-heading quantity-heading">Взрослые:</span>
                   <button class="quantity-button quantity-button-minus" type="button"></button>
-                  <input class="quantity-input" type="number" id="adult" min= "1" placeholder="0">
+                  <input class="quantity-input" type="number" id="adult" min= "1" placeholder="2">
                   <button class="quantity-button quantity-button-plus" type="button"></button>
                 </label>
                 <label for="children" class="quantity">
@@ -260,7 +261,7 @@
                     </span>
                   </span>
                   <button class="quantity-button quantity-button-minus" type="button"></button>
-                  <input class="quantity-input" type="number" id="children" min="0" placeholder="0">
+                  <input class="quantity-input" type="number" id="children" min="0" placeholder="2">
                   <button class="quantity-button quantity-button-plus" type="button"></button>
                 </label>
               </fieldset>

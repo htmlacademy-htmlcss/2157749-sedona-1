@@ -70,6 +70,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   background-color: #756157;
   color: #ffffff;
   width: fit-content;
@@ -112,6 +113,7 @@ body {
 }
 
 .button-want {
+  width: 160px;
   padding: 8px 34px;
   margin: 14px 0;
 }
@@ -270,6 +272,12 @@ body {
   opacity: 0.3;
 }
 
+.navigation-logo img {
+  width: 140px;
+  height: 70px;
+  object-fit: contain;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -313,10 +321,10 @@ body {
 .user-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   align-items: center;
-  max-width: 132px;
+  width: 146px;
   margin-left: auto;
-
 }
 
 .navigation-search {
@@ -364,6 +372,9 @@ body {
 .bunner-img {
   display: block;
   margin: 0 auto;
+  width: 458px;
+  height: 352px;
+  object-fit: contain;
 }
 
 .main-header {
@@ -412,6 +423,12 @@ body {
   color: #ffffff;
 }
 
+.advantages-pic img {
+  width: 800px;
+  height: 385px;
+  object-fit: contain;
+}
+
 .advantages-card {
   display: flex;
   flex-direction: column;
@@ -422,6 +439,7 @@ body {
   box-sizing: border-box;
   padding: 103px 85px;
   margin: 0;
+  width: 400px;
 }
 
 .advantages-blue {
@@ -645,9 +663,10 @@ label:has([type="email"]:disabled) {
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
   align-items: start;
-  gap: 41px;
-  padding-top: 43px;
+  gap: 40px;
+  padding-top: 47px;
   padding-bottom: 30px;
+  padding-left: 73px;
 }
 
 .social-wrapper {
@@ -737,7 +756,7 @@ label:has([type="email"]:disabled) {
 .academy-logo-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 4px;
+  padding-top: 2px;
   gap: 10px;
   justify-content: flex-end;
 }
@@ -961,7 +980,7 @@ label:has([type="email"]:disabled) {
 
 .filter-inputs-buttons {
   display: flex;
-  gap: 70px;
+  gap: 63px;
 }
 
 .cost-filter-wrapper {
@@ -990,7 +1009,7 @@ label:has([type="email"]:disabled) {
   font-family: inherit;
   text-align: right;
   display: block;
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   position: relative;
 }
 
@@ -1006,6 +1025,7 @@ label:has([type="email"]:disabled) {
   display: inline-block;
   font-family: inherit;
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
   width: 143px;
   margin: 0;
@@ -1035,14 +1055,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;;
+  -moz-appearance: textfield;
+  ;
 }
 
 .range-scale {
   background-color: rgba(255, 255, 255, 0.3);
   width: 288px;
   height: 4px;
-  }
+}
 
 .range-bar {
   position: absolute;
@@ -1377,22 +1398,23 @@ input[type="number"] {
   cursor: pointer;
 }
 
-.modal-fieldset {
-  border: none;
-}
-
 .modal-date-lable {
   width: 577px;
   display: grid;
-  grid-template-columns: auto 440px;
+  grid-template-columns: 137px 440px;
+  grid-template-rows: auto auto;
+   align-items: start;
   position: relative;
 }
 
 .modal-fieldset {
   display: flex;
   flex-direction: column;
+  gap: 23px;
   padding: 0;
   margin: 0;
+  border: none;
+  margin-bottom: 23px;
 }
 
 .modal-date-heading {
@@ -1404,9 +1426,12 @@ input[type="number"] {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
-  align-self: center;
-  display: block;
+  min-height: 48px;
   position: relative;
+  grid-row: 1/-1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .modal-date-text {
@@ -1417,7 +1442,6 @@ input[type="number"] {
   text-align: left;
   min-height: 21px;
   margin: 0;
-  margin-bottom: 23px;
 }
 
 .text-red {
@@ -1425,7 +1449,7 @@ input[type="number"] {
 }
 
 .modal-input-date {
-  padding: 12px 45px 12px 20px;
+  padding: 12px 45px 12px 22px;
   margin-bottom: 4px;
   border-radius: 4px;
   border: none;
@@ -1436,14 +1460,9 @@ input[type="number"] {
   line-height: 24px;
   color: #000000;
   text-align: left;
-}
-
-.calendar-image{
-  position: relative;
   background-image: url(../images/icons/calendar.svg);
   background-repeat: no-repeat;
-  top: -34px;
-  left: 539px;
+  background-position: right 20px center;
 }
 
 .modal-title {
@@ -1453,11 +1472,13 @@ input[type="number"] {
 .modal-fieldset-quantity {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto  auto;
   column-gap: 88px;
   margin-bottom: 48px;
 }
 
 .quantity {
+  width: 247px;
   display: grid;
   grid-template-columns: auto 40px 31px 40px;
   align-items: center;
@@ -1478,7 +1499,7 @@ input[type="number"] {
   padding-right: 40px;
   display: flex;
   gap: 10px;
-position: relative;
+  position: relative;
 }
 
 
@@ -1491,7 +1512,7 @@ position: relative;
   margin: 0;
 }
 
-.quantity-button:hover{
+.quantity-button:hover {
   background-color: #e9e6e6;
 }
 
@@ -1533,7 +1554,7 @@ position: relative;
   width: 26px;
   height: 26px;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 58px;
   border: none;
   border-radius: 50%;
@@ -1545,7 +1566,7 @@ position: relative;
 }
 
 .button-info:hover + .tooltip,
-.button-info:focus + .tooltip{
+.button-info:focus + .tooltip {
   display: block;
 }
 
