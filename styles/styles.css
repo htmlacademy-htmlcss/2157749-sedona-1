@@ -1001,8 +1001,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="number"] {
+  appearance: none;
   -moz-appearance: textfield;
-  ;
 }
 
 .range-scale {
@@ -1348,6 +1348,7 @@ input[type="number"] {
 .modal-close-button:disabled {
   opacity: 0.3;
 }
+
 .modal-date-lable {
   position: relative;
   display: grid;
@@ -1416,7 +1417,7 @@ input[type="number"] {
   opacity: 0.6;
 }
 
-.modal-input-date:disabled{
+.modal-input-date:disabled {
   cursor: not-allowed;
 }
 
@@ -1426,33 +1427,31 @@ input[type="number"] {
 
 .modal-fieldset-quantity {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 247px 242px;
   grid-template-rows: auto auto;
   column-gap: 88px;
 
 }
 
-.quantity {
-  position: relative;
+
+
+.quantity-wrapper {
   display: grid;
   grid-template-columns: 136px 40px 31px 40px;
   align-items: center;
-  width: 247px;
+  border: none;
+  margin:  0;
 }
 
-.quantity-heading {
-  padding-right: 40px;
-}
-
-.quantity-heading-info {
-  padding-right: 40px;
+.quantity-wrapper:last-child {
+  position: relative;
 }
 
 
 .quantity-button {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 48px;
   margin: 0;
   padding: 24px 20px;
   border: none;
@@ -1499,6 +1498,7 @@ input[type="number"] {
   margin: 0;
   height: 48px;
   border: none;
+  width: 31px;
 }
 
 .quantity-input:hover {
@@ -1582,6 +1582,6 @@ input[type="number"] {
   border-radius: 10px;
 }
 
-.modal-search-button:disabled{
+.modal-search-button:disabled {
   opacity: 0.3;
 }

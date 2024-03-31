@@ -188,7 +188,7 @@
         <div class="footer-wrapper row">
           <ul class="list-reset social-wrapper">
             <li>
-              <a class="link social-link social-vk" disabled href="https://vk.com/htmlacademy">
+              <a class="link social-link social-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
@@ -233,37 +233,53 @@
                 <legend class="visually-hidden">Период прибывания</legend>
 
                 <label class="modal-date-lable" for="check-in">
-                  <p class="modal-date-heading">Дата заезда:</p>
-                  <input class="modal-input-date" type="text" id="check-in" placeholder="Введите дату" value="27 апреля 2020">
+                  <span class="modal-date-heading">Дата заезда:</span>
+                  <input class="modal-input-date" type="text" id="check-in" placeholder="Введите дату"
+                    value="27 апреля 2020">
                   <span class="modal-date-text text-red">Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.</span>
                 </label>
 
                 <label class="modal-date-lable" for="check-out">
-                  <p class="modal-date-heading">Дата выезда:</p>
-                  <input class="modal-input-date" type="text" id="check-out" placeholder="Введите дату" value="1 сентября 2023">
+                  <span class="modal-date-heading">Дата выезда:</span>
+                  <input class="modal-input-date" type="text" id="check-out" placeholder="Введите дату"
+                    value="1 сентября 2023">
                   <span class="modal-date-text">На&nbsp;эти даты есть свободные номера. Пока есть.</span>
                 </label>
 
               </fieldset>
               <fieldset class="modal-fieldset modal-fieldset-quantity">
                 <legend class="visually-hidden">Количество персон</legend>
-                <label for="adult" class="quantity" >
-                  <span class="modal-date-heading quantity-heading">Взрослые:</span>
-                  <button class="quantity-button quantity-button-minus" type="button"></button>
-                  <input class="quantity-input" type="number" id="adult" min= "1" placeholder="0" value="2">
-                  <button class="quantity-button quantity-button-plus" type="button"></button>
-                </label>
-                <label for="children" class="quantity">
-                  <span class="modal-date-heading quantity-heading-info">Дети</span>
-                    <button class="button-info" type="button"></button>
-                    <span class="tooltip">
-                      <span class="tooltip-text">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</span>
 
+                <fieldset class="quantity-wrapper">
+                  <p class=" modal-date-heading quantity-heading">Взрослые:</p>
+
+                    <button class="quantity-button quantity-button-minus" id="adult-minus" type="button"></button>
+
+                  <label for="adult" class="quantity">
+                    <input class="quantity-input" type="number" id="adult" min="1" placeholder="0" value="2">
+                  </label>
+
+                    <button class="quantity-button quantity-button-plus" id="adult-plus" type="button"></button>
+
+                </fieldset>
+
+                <fieldset class="quantity-wrapper">
+                  <p class="modal-date-heading quantity-heading-info">Дети</p>
+                  <button class="button-info" type="button"></button>
+                  <span class="tooltip">
+                    <span class="tooltip-text">Укажите количество детей, которые будут с&nbsp;вами, возраст которых
+                      от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</span>
                   </span>
-                  <button class="quantity-button quantity-button-minus" type="button"></button>
-                  <input class="quantity-input" type="number" id="children" min="0" placeholder="0" value="2">
-                  <button class="quantity-button quantity-button-plus" type="button"></button>
-                </label>
+
+                    <button class="quantity-button quantity-button-minus" id="children-minus" type="button"></button>
+
+                  <label for="children" class="quantity"><input class="quantity-input" type="number" id="children"
+                      min="0" placeholder="0" value="2"></label>
+
+                    <button class="quantity-button quantity-button-plus" id="children-plus" type="button"></button>
+
+                </fieldset>
+
               </fieldset>
               <button class="button button-blue modal-search-button" type="submit">Найти</button>
             </form>
@@ -273,4 +289,5 @@
     </div>
 
   </body>
+
 </html>
