@@ -71,28 +71,28 @@
           <form class="filter-wrapper" action="https://echo.htmlacademy.ru/" method="post">
             <h2 class="visually-hidden" hidden>Фильтры поиска гостиниц</h2>
 
-            <fieldset class="fillter-infrastructure filter-fieldset">
+            <fieldset class="filter-fieldset">
               <legend class="filter-title">Инфраструктура</legend>
               <ul class="list-reset filter-list">
                 <li>
                   <label class="control" for="pool">
                     <input class="visually-hidden control-input" type="checkbox" name="pool" id="pool" checked>
                     <span class="control-mark control-mark-checkbox"></span>
-                    <span class="control-label">Бacceйн</span>
+                    <span>Бacceйн</span>
                   </label>
                 </li>
                 <li>
                   <label class="control" for="parking">
                     <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked>
                     <span class="control-mark control-mark-checkbox"></span>
-                    <span class="control-label">Парковка</span>
+                    <span>Парковка</span>
                   </label>
                 </li>
                 <li>
                   <label class="control" for="wi-fi">
                     <input class="visually-hidden control-input" type="checkbox" name="wi-fi" id="wi-fi">
                     <span class="control-mark control-mark-checkbox"></span>
-                    <span class="control-label">Wi-Fi</span>
+                    <span>Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -107,7 +107,7 @@
                     <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel"
                       id="hotel" checked>
                     <span class="control-mark control-mark-radio"></span>
-                    <span class="control-label">Гостиница</span>
+                    <span>Гостиница</span>
                   </label>
                 </li>
                 <li>
@@ -115,7 +115,7 @@
                     <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel"
                       id="motel">
                     <span class="control-mark control-mark-radio"></span>
-                    <span class="control-label">Мотель</span>
+                    <span>Мотель</span>
                   </label>
                 </li>
                 <li>
@@ -123,7 +123,7 @@
                     <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments"
                       id="apartments">
                     <span class="control-mark control-mark-radio"></span>
-                    <span class="control-label">Апартаменты</span>
+                    <span>Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -137,12 +137,12 @@
                   <div class="input-filters-wrapper">
                     <label class="filter-input-label" for="input-left">
                       <span class="input-label-span">от</span>
-                      <input class="input-filter input-left subscription-input" type="number" placeholder="Цена" value="0"
+                      <input class="input-filter subscription-input" type="number" placeholder="Цена" value="0"
                         id="input-left">
                     </label>
                     <label class="filter-input-label" for="input-right">
                       <span class="input-label-span">до</span>
-                      <input class="input-filter input-right subscription-input" type="number" placeholder="Цена"
+                      <input class="input-filter subscription-input" type="number" placeholder="Цена"
                         value="9000" id="input-right">
                     </label>
                   </div>
@@ -179,17 +179,17 @@
             </select>
           </div>
           <ul class="list-reset view-wrapper">
-            <li class="view-item">
+            <li>
               <button class="button-view button-current view-tiles">
                 <span class="visually-hidden">Плитки</span>
               </button>
             </li>
-            <li class="view-item">
+            <li>
               <button class="button-view view-single">
                 <span class="visually-hidden">По одной</span>
               </button>
             </li>
-            <li class="view-item">
+            <li>
               <button class="button-view view-list">
                 <span class="visually-hidden">Список</span>
               </button>
@@ -198,7 +198,7 @@
 
         </section>
 
-        <section class="hotels-cards row">
+        <section class="row">
 
           <ul class="list-reset cards-container">
             <li class="card-wrapper">
@@ -285,19 +285,19 @@
               <a class="link pagination-link pagination-button-white" href="#" aria-current="page">1</a>
             </li>
             <li>
-              <a class="link pagination-link button-blue link-white pagination-focus" href="#">2</a>
+              <a class="link pagination-link button-blue link-white" href="#">2</a>
             </li>
             <li>
-              <a class="link pagination-link button-blue link-white pagination-focus" href="#">3</a>
+              <a class="link pagination-link button-blue link-white" href="#">3</a>
             </li>
             <li>
-              <a class="link pagination-link button-blue link-white pagination-focus" href="#">4</a>
+              <a class="link pagination-link button-blue link-white" href="#">4</a>
             </li>
             <li class="pagination-item">
               <a class="link pagination-link pagination-button-white" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="link pagination-link button-blue link-white pagination-focus" href="#">10</a>
+              <a class="link pagination-link button-blue link-white" href="#">10</a>
             </li>
           </ol>
           <!--./pagination-->
