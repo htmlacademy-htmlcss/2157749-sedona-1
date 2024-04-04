@@ -103,6 +103,7 @@ body {
 }
 
 .button-want {
+  width: 160px;
   padding: 8px 34px;
   margin: 14px 0;
 }
@@ -688,7 +689,9 @@ label:has([type="email"]:disabled) {
 }
 
 .phone-wapper {
-  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   padding-left: 28px;
 }
 
@@ -1048,12 +1051,10 @@ input[type="number"] {
 }
 
 .filter-buttons {
-  position: relative;
-  top: 56px;
-  left: 11px;
   display: flex;
   flex-direction: column;
   gap: 28px;
+  padding-top: 56px;
 }
 
 /*hotels-sorting*/
@@ -1350,7 +1351,7 @@ input[type="number"] {
   position: relative;
   display: grid;
   grid-template-columns: 137px 440px;
-  grid-template-rows: auto auto;
+  grid-template-rows: 48px minmax(21px);
   align-items: start;
   width: 577px;
 }
@@ -1428,7 +1429,7 @@ input[type="number"] {
   grid-template-rows: auto auto;
   justify-items: center;
   column-gap: 91px;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
 }
 
 
@@ -1511,8 +1512,8 @@ input[type="number"] {
 
 .button-info {
   position: absolute;
-  top: 14px;
-  left: 75px;
+  top: 10px;
+  left: 73px;
   width: 26px;
   height: 26px;
   border: none;
