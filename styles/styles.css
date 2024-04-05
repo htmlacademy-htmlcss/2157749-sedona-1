@@ -732,8 +732,9 @@ label:has([type="email"]:disabled) {
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #2b3a3f;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 63px 70px 70px;
   margin: 0;
+  margin-bottom: -3px;
 }
 
 .hotels-title {
@@ -917,7 +918,7 @@ label:has([type="email"]:disabled) {
 .filter-inputs-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 63px;
+  gap: 70px;
   margin-left: auto;
 }
 
@@ -990,7 +991,7 @@ label:has([type="email"]:disabled) {
   color: #000000;
   top: 50%;
   transform: translateY(-50%);
-  right: 16px;
+  right: 20px;
   z-index: 1;
 }
 
@@ -1160,7 +1161,8 @@ input[type="number"] {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
-  padding-top: 18px;
+  padding-top: 16px;
+  padding-left: 19px;
 }
 
 .card-link {
@@ -1350,8 +1352,9 @@ input[type="number"] {
 .modal-date-lable {
   position: relative;
   display: grid;
-  grid-template-columns: 137px 440px;
-  grid-template-rows: 48px minmax(21px);
+  grid-template-columns: 127px 440px;
+  grid-template-rows: 48px minmax(21px, 1fr);
+  column-gap: 10px;
   align-items: start;
   width: 577px;
 }
@@ -1375,6 +1378,7 @@ input[type="number"] {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  color: #000000;
   margin: 0;
   padding: 0;
   min-height: 48px;
@@ -1388,6 +1392,7 @@ input[type="number"] {
   min-height: 21px;
   margin: 0;
   padding-left: 20px;
+  padding-top: 4px;
 }
 
 .text-red {
@@ -1407,7 +1412,6 @@ input[type="number"] {
   background-image: url(../images/icons/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
-  margin-bottom: 4px;
   padding: 12px 45px 12px 22px;
 }
 
@@ -1428,41 +1432,72 @@ input[type="number"] {
   grid-template-columns: 247px 242px;
   grid-template-rows: auto auto;
   justify-items: center;
-  column-gap: 91px;
-  margin-bottom: 13px;
+  column-gap: 88px;
+  margin-bottom: 24px;
 }
-
-
 
 .quantity-wrapper {
   display: grid;
-  grid-template-columns: 136px 40px 31px 40px;
-  align-items: center;
+  grid-template-columns: 136px 112px;
   border: none;
   margin: 0;
-  padding-top: 0;
+  padding: 0;
+}
+
+.quantity-button-wrapper {
+  display: flex;
 }
 
 .quantity-wrapper:last-child {
   position: relative;
 }
 
+.quantity-heading {
+  margin-right: 10px;
+}
 
 .quantity-button {
+  position: relative;
   display: block;
   width: 40px;
   height: 48px;
   margin: 0;
-  padding: 24px 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center center;
   border: none;
+  outline: 0;
 }
 
-.quantity-button:hover {
-  background-color: #e9e6e6;
+.quantity-button::after,
+.quantity-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+}
+
+.quantity-button::before {
+  opacity: 0.3;
+}
+
+.quantity-button:focus::after {
+  outline: auto;
+  opacity: 1;
+  border-radius: 4px;
+}
+
+.quantity-button:hover::before {
+  opacity: 1;
+  outline: 0;
 }
 
 .quantity-button:active {
-  background-color: #b9b8b8;
+  opacity: 0.3;
+  outline: 0;
 }
 
 .quantity-button:disabled {
@@ -1470,19 +1505,22 @@ input[type="number"] {
 }
 
 .quantity-button-minus {
-  display: block;
+  border-radius: 4px 0 0 4px;
+}
+
+.quantity-button-minus::before {
   background-image: url(../images/icons/button-minus.svg);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: center center;
+  border-radius: 4px;
 }
 
 .quantity-button-plus {
-  display: block;
+  border-radius: 0 4px 4px 0;
+  ;
+}
+
+.quantity-button-plus::before {
   background-image: url(../images/icons/button-plus.svg);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: center center;
+  border-radius: 4px;
 }
 
 .quantity-input {
@@ -1492,7 +1530,6 @@ input[type="number"] {
   font-weight: 700;
   line-height: 20px;
   background: #f2f2f2;
-  padding: 14px 10px;
   text-align: center;
   box-sizing: border-box;
   margin: 0;
@@ -1512,8 +1549,8 @@ input[type="number"] {
 
 .button-info {
   position: absolute;
-  top: 10px;
-  left: 73px;
+  top: 12px;
+  left: 62px;
   width: 26px;
   height: 26px;
   border: none;
@@ -1532,9 +1569,9 @@ input[type="number"] {
 
 .tooltip {
   position: absolute;
-  top: 34px;
-  left: -41px;
-  display: none;
+  top: 36px;
+    left: -53px;
+  /* display: none; */
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1550,7 +1587,7 @@ input[type="number"] {
 .tooltip::before {
   position: absolute;
   top: -9px;
-  left: 120px;
+  left: 118px;
   content: "";
   display: block;
   width: 19px;

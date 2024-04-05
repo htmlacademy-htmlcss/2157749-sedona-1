@@ -232,19 +232,19 @@
               <fieldset class="modal-fieldset">
                 <legend class="visually-hidden">Период прибывания</legend>
 
-                <label class="modal-date-lable" for="check-in">
-                  <span class="modal-date-heading">Дата заезда:</span>
+                <div class="modal-date-lable">
+                  <label class="modal-date-heading"  for="check-in">Дата заезда:</label>
                   <input class="modal-input-date" type="text" id="check-in" placeholder="Введите дату"
                     value="27 апреля 2020">
                   <span class="modal-date-text text-red">Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.</span>
-                </label>
+                </div>
 
-                <label class="modal-date-lable" for="check-out">
-                  <span class="modal-date-heading">Дата выезда:</span>
+                <div class="modal-date-lable">
+                  <label class="modal-date-heading" for="check-out">Дата выезда:</label>
                   <input class="modal-input-date" type="text" id="check-out" placeholder="Введите дату"
                     value="1 сентября 2023">
                   <span class="modal-date-text">На&nbsp;эти даты есть свободные номера. Пока есть.</span>
-                </label>
+                </div>
 
               </fieldset>
               <fieldset class="modal-fieldset modal-fieldset-quantity">
@@ -252,32 +252,40 @@
 
                 <fieldset class="quantity-wrapper">
                   <p class=" modal-date-heading quantity-heading">Взрослые:</p>
+                  <div class="quantity-button-wrapper">
+                    <button class="quantity-button quantity-button-minus" id="adult-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество</span>
+                    </button>
 
-                    <button class="quantity-button quantity-button-minus" id="adult-minus" type="button"></button>
+                    <label for="adult">
+                      <input class="quantity-input" type="number" id="adult" min="1" placeholder="0" value="2">
+                    </label>
 
-                  <label for="adult">
-                    <input class="quantity-input" type="number" id="adult" min="1" placeholder="0" value="2">
-                  </label>
-
-                    <button class="quantity-button quantity-button-plus" id="adult-plus" type="button"></button>
-
+                    <button class="quantity-button quantity-button-plus" id="adult-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество</span>
+                    </button>
+                  </div>
                 </fieldset>
 
                 <fieldset class="quantity-wrapper">
-                  <p class="modal-date-heading quantity-heading-info">Дети</p>
+                  <p class="modal-date-heading quantity-heading-info">Дети:</p>
                   <button class="button-info" type="button"></button>
                   <p class="tooltip">
                     Укажите количество детей, которые будут с&nbsp;вами, возраст которых
-                      от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.
+                    от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.
                   </p>
+                  <div class="quantity-button-wrapper">
+                    <button class="quantity-button quantity-button-minus" id="children-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество</span>
+                    </button>
 
-                    <button class="quantity-button quantity-button-minus" id="children-minus" type="button"></button>
+                    <label for="children" class="quantity"><input class="quantity-input" type="number" id="children"
+                        min="0" placeholder="0" value="2"></label>
 
-                  <label for="children" class="quantity"><input class="quantity-input" type="number" id="children"
-                      min="0" placeholder="0" value="2"></label>
-
-                    <button class="quantity-button quantity-button-plus" id="children-plus" type="button"></button>
-
+                    <button class="quantity-button quantity-button-plus" id="children-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество</span>
+                    </button>
+                  </div>
                 </fieldset>
 
               </fieldset>
