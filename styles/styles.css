@@ -1562,6 +1562,9 @@ box-sizing: border-box;
   height: 48px;
   border: none;
   width: 31px;
+appearance: none;
+  -moz-appearance: textfield;
+
 }
 
 .quantity-input:hover {
