@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -42,7 +42,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 15px 0 #00000033;
+  box-shadow: 0 0 15px 0 #000033;
 }
 
 .row {
@@ -90,7 +90,7 @@ body {
   width: 44px;
   height: 64px;
   box-sizing: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.0);
+  border: 2px solid transparent;
   border-radius: 4px;
 }
 
@@ -150,7 +150,7 @@ body {
 }
 
 .button-reset {
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: transparent;
   padding: 8px 58px;
   border: 3px solid transparent;
   width: 191px;
@@ -284,12 +284,12 @@ body {
 }
 
 .navigation-search {
-  background-image: url(../images/icons/search.svg);
+  background-image: url("../images/icons/search.svg");
 }
 
 .navigation-favorite {
   position: relative;
-  background-image: url(../images/icons/heart.svg);
+  background-image: url("../images/icons/heart.svg");
 }
 
 .favorite-text {
@@ -314,7 +314,7 @@ body {
 
 /*bunner*/
 .main-bunner {
-  background-image: url(../images/pictures/divider-hero.svg), url(../images/pictures/background-hero.jpg);
+  background-image: url("../images/pictures/divider-hero.svg"), url("../images/pictures/background-hero.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center center;
@@ -484,15 +484,15 @@ body {
 }
 
 .services-image-house::before {
-  background-image: url(../images/icons/advantage-housing.svg);
+  background-image: url("../images/icons/advantage-housing.svg");
 }
 
 .services-image-food::before {
-  background-image: url(../images/icons/advantage-food.svg);
+  background-image: url("../images/icons/advantage-food.svg");
 }
 
 .services-image-souvenirs::before {
-  background-image: url(../images/icons/advantage-gift.svg);
+  background-image: url("../images/icons/advantage-gift.svg");
 }
 
 .services-text {
@@ -540,7 +540,7 @@ body {
 }
 
 .main-subscription {
-  background-image: url(../images/pictures/subscribe.jpg);
+  background-image: url("../images/pictures/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #30567b;
@@ -597,7 +597,7 @@ body {
   background: #f2f2f2;
 }
 
-label:has([type="email"]:disabled) {
+.email-label:has([type="email"]:disabled) {
   cursor: not-allowed;
 }
 
@@ -616,7 +616,7 @@ label:has([type="email"]:disabled) {
   grid-template-columns: 1fr 400px 1fr;
   align-items: start;
   gap: 40px;
-  padding-top: 44px;
+  padding-top: 47px;
   padding-bottom: 30px;
   padding-left: 73px;
 }
@@ -650,18 +650,18 @@ label:has([type="email"]:disabled) {
 }
 
 .social-vk::before {
-  mask-image: url(../images/icons/vk.svg);
-  -webkit-mask-image: url(../images/icons/vk.svg);
+  mask-image: url("../images/icons/vk.svg");
+  -webkit-mask-image: url("../images/icons/vk.svg");
 }
 
 .social-telegram::before {
-  mask-image: url(../images/icons/telegram.svg);
-  -webkit-mask-image: url(../images/icons/telegram.svg);
+  mask-image: url("../images/icons/telegram.svg");
+  -webkit-mask-image: url("../images/icons/telegram.svg");
 }
 
 .social-youtube::before {
-  mask-image: url(../images/icons/youtube.svg);
-  -webkit-mask-image: url(../images/icons/youtube.svg);
+  mask-image: url("../images/icons/youtube.svg");
+  -webkit-mask-image: url("../images/icons/youtube.svg");
 }
 
 .social-link:hover::before {
@@ -726,7 +726,7 @@ label:has([type="email"]:disabled) {
 /*hotels choise*/
 
 .hotels-wrapper {
-  background-image: url(../images/pictures/filter.jpg);
+  background-image: url("../images/pictures/filter.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -761,7 +761,7 @@ label:has([type="email"]:disabled) {
 
 .link-home {
   content: "";
-  background-image: url(../images/icons/breadcrumbs-home.svg);
+  background-image: url("../images/icons/breadcrumbs-home.svg");
   width: 13px;
   height: 21px;
   background-repeat: no-repeat;
@@ -775,7 +775,7 @@ label:has([type="email"]:disabled) {
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  background-image: url(../images/icons/breadcrumbs-arrow.svg);
+  background-image: url("../images/icons/breadcrumbs-arrow.svg");
   content: "";
   width: 8px;
   height: 21px;
@@ -839,6 +839,8 @@ label:has([type="email"]:disabled) {
 .control-input {
   display: block;
   margin-right: 16px;
+  outline: none;
+  appearance: none;
 }
 
 .control {
@@ -903,7 +905,7 @@ label:has([type="email"]:disabled) {
   content: "";
   width: 12px;
   height: 10px;
-  background-image: url(../images/icons/checkbox-marker.svg);
+  background-image: url("../images/icons/checkbox-marker.svg");
   background-repeat: no-repeat;
 }
 
@@ -999,15 +1001,16 @@ label:has([type="email"]:disabled) {
   z-index: 1;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+.input-filter::-webkit-inner-spin-button,
+.input-filter::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+.input-filter {
   appearance: none;
   -moz-appearance: textfield;
+
 }
 
 .range-scale {
@@ -1030,15 +1033,18 @@ input[type="number"] {
   background: #ffffff;
   border-radius: 5px;
   cursor: pointer;
+  border: 0;
 }
 
 .range-toggle:hover {
-  background-color: #8d8989;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:active,
-.range-toggle:focus-visible {
-  outline: 3px solid #ffffff;
+.range-toggle:active {
+outline: 2px solid #83b3d3;
+border-radius: 5px;
+box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+box-sizing: border-box;
 }
 
 .range-toggle:disabled {
@@ -1101,7 +1107,7 @@ input[type="number"] {
   line-height: 21px;
   width: 292px;
   padding: 14px 40px 14px 20px;
-  background-image: url(../images/icons/select-arrow.svg);
+  background-image: url("../images/icons/select-arrow.svg");
   background-position: right 21px center;
   background-repeat: no-repeat;
   background-color: inherit;
@@ -1131,21 +1137,21 @@ input[type="number"] {
 }
 
 .view-tiles {
-  background-image: url(../images/icons/view-tiles.svg);
+  background-image: url("../images/icons/view-tiles.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: 50% 50%;
 }
 
 .view-single {
-  background-image: url(../images/icons/view-single.svg);
+  background-image: url("../images/icons/view-single.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: 50% 50%;
 }
 
 .view-list {
-  background-image: url(../images/icons/view-list.svg);
+  background-image: url("../images/icons/view-list.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: 50% 50%;
@@ -1245,9 +1251,9 @@ input[type="number"] {
 
 .star::before {
   display: block;
-  content: '';
+  content: "";
   height: 17px;
-  background-image: url(../images/icons/star.svg);
+  background-image: url("../images/icons/star.svg");
   background-repeat: space no-repeat;
   background-size: contain;
 }
@@ -1301,6 +1307,9 @@ input[type="number"] {
 }
 
 /* modal-window */
+.modal-body {
+  overflow: hidden;
+}
 
 .modal-container {
   position: fixed;
@@ -1423,7 +1432,7 @@ input[type="number"] {
   border: none;
   background-color: #f2f2f2;
   color: #000000;
-  background-image: url(../images/icons/calendar.svg);
+  background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding: 12px 45px 12px 22px;
@@ -1525,7 +1534,7 @@ input[type="number"] {
 }
 
 .quantity-button-minus::before {
-  background-image: url(../images/icons/button-minus.svg);
+  background-image: url("../images/icons/button-minus.svg");
   border-radius: 4px;
 }
 
@@ -1535,7 +1544,7 @@ input[type="number"] {
 }
 
 .quantity-button-plus::before {
-  background-image: url(../images/icons/button-plus.svg);
+  background-image: url("../images/icons/button-plus.svg");
   border-radius: 4px;
 }
 
@@ -1572,7 +1581,7 @@ input[type="number"] {
   border: none;
   border-radius: 50%;
   background: #83b3d3;
-  background-image: url(../images/icons/icons-info.svg);
+  background-image: url("../images/icons/icons-info.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1608,7 +1617,7 @@ input[type="number"] {
   display: block;
   width: 19px;
   height: 9px;
-  background-image: url(../images/icons/tooltip-triangle.svg);
+  background-image: url("../images/icons/tooltip-triangle.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
